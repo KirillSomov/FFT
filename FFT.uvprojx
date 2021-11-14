@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\lib\App;.\lib\Func;.\lib\HW</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -380,7 +380,89 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>App</GroupName>
+          <Files>
+            <File>
+              <FileName>link.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\App\link.h</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\App\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Func</GroupName>
+          <Files>
+            <File>
+              <FileName>FFT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\Func\FFT.c</FilePath>
+            </File>
+            <File>
+              <FileName>FFT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\Func\FFT.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HW</GroupName>
+          <Files>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>CPU.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\CPU.c</FilePath>
+            </File>
+            <File>
+              <FileName>CPU.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\CPU.h</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_ILI9341.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\LCD_ILI9341.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_ILI9341.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\LCD_ILI9341.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\SPI.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\SPI.h</FilePath>
+            </File>
+            <File>
+              <FileName>Touch_FT6236.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\Touch_FT6236.c</FilePath>
+            </File>
+            <File>
+              <FileName>Touch_FT6236.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\Touch_FT6236.h</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
@@ -409,7 +491,7 @@
       </component>
     </components>
     <files>
-      <file attr="config" category="source" name="Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s">
+      <file attr="config" category="source" name="Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s" version="1.5">
         <instance index="0">RTE\Device\MDR1986BE92\startup_MDR32F9Qx.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.5" condition="CON_MDR1986BE9x"/>
         <package name="MDR1986BExx" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.5"/>
@@ -417,7 +499,7 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c">
+      <file attr="config" category="source" name="Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c" version="1.5">
         <instance index="0">RTE\Device\MDR1986BE92\system_MDR32F9Qx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.5" condition="CON_MDR1986BE9x"/>
         <package name="MDR1986BExx" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.5"/>
@@ -425,7 +507,7 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="header" name="Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h">
+      <file attr="config" category="header" name="Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h" version="1.5">
         <instance index="0">RTE\Device\MDR1986BE92\system_MDR32F9Qx.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.5" condition="CON_MDR1986BE9x"/>
         <package name="MDR1986BExx" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.5"/>
