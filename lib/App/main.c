@@ -11,6 +11,7 @@ int16_t		realNumbers[64];
 uint8_t		column[32] = {0};
 uint32_t	ADC_sum = 0;
 
+// test
 
 // отрисовка шкал
 void interface_init(void)
