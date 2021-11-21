@@ -5,16 +5,16 @@
 
 	// подключение заголовочных файлов модулей проекта
 	#include "link.h"
-
-
+	
+	
 	// управление линией
 	// посылка команды/данных
-	#define LCD_DC_RESET  	GPIO_ResetBits(GPIOC, GPIO_Pin_9)
-	#define LCD_DC_SET    	GPIO_SetBits(GPIOC, GPIO_Pin_9)
+	#define LCD_DC_RESET		PORT_ResetBits(DO_LCD_DC_PORT,	DO_LCD_DC_PIN)
+	#define LCD_DC_SET    	PORT_SetBits(DO_LCD_DC_PORT,	DO_LCD_DC_PIN)
 
 	// вкл/выкл LCD
-	#define LCD_RST_RESET		GPIO_ResetBits(GPIOD, GPIO_Pin_3)
-	#define LCD_RST_SET			GPIO_SetBits(GPIOD, GPIO_Pin_3)
+	#define LCD_RST_RESET		PORT_ResetBits(DO_LCD_RST_PORT,	DO_LCD_RST_PIN)
+	#define LCD_RST_SET			PORT_SetBits(DO_LCD_RST_PORT,	DO_LCD_RST_PIN)
 
 	// вкл/выкл подсветки LCD
 	//#define	LCD_LED_OFF			MDR_PORTA->RXTX &= ~(1 << 7)

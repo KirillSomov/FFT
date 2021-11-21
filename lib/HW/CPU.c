@@ -26,8 +26,8 @@ bool clockCpuSetup(void)
 	if(RST_CLK_HSEstatus() == SUCCESS)
 	{
 		// установка прошла успешно
-		// конфигурация умножителя: источник - HSE с k = 1, Коэф. умнож. = 10
-		RST_CLK_CPU_PLLconfig(RST_CLK_CPU_PLLsrcHSEdiv1, RST_CLK_CPU_PLLmul10);
+		// конфигурация умножителя: источник - HSE с k = 1, Коэф. умнож. = 8
+		RST_CLK_CPU_PLLconfig(RST_CLK_CPU_PLLsrcHSEdiv1, RST_CLK_CPU_PLLmul8);
 		
 		// включение умножителя PLL
 		RST_CLK_CPU_PLLcmd(ENABLE);
@@ -67,20 +67,15 @@ bool clockCpuSetup(void)
 // SYS.00003 Настройка тактирования периферии процессора
 void clockPeriphInit(void)
 {
-	// включение тактирования портов
+	RST_CLK_PCLKcmd(RST_CLK_PCLK_RST_CLK,	ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTA,		ENABLE);
-	RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTB,		ENABLE);
-	RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTC,		ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTD,		ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTE,		ENABLE);
-	RST_CLK_PCLKcmd(RST_CLK_PCLK_PORTF,		ENABLE);
 	
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_BKP,			ENABLE);
-	RST_CLK_PCLKcmd(RST_CLK_PCLK_SSP1,		ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_SSP2,		ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_ADC,			ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_TIMER1,	ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_TIMER2,	ENABLE);
 	RST_CLK_PCLKcmd(RST_CLK_PCLK_TIMER3,	ENABLE);
-	RST_CLK_PCLKcmd(RST_CLK_PCLK_RST_CLK,	ENABLE);
 }

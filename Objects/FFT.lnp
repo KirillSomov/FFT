@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\fft.o"
+".\objects\font.o"
+".\objects\gui.o"
+".\objects\picture.o"
+".\objects\cpu.o"
+".\objects\lcd_ili9341.o"
+".\objects\spi.o"
+".\objects\port_cfg.o"
+".\objects\port_setup.o"
+".\objects\timer.o"
+".\objects\startup_mdr32f9qx.o"
+".\objects\system_mdr32f9qx.o"
+".\objects\mdr32f9qx_bkp.o"
+".\objects\mdr32f9qx_port.o"
+".\objects\mdr32f9qx_rst_clk.o"
+".\objects\mdr32f9qx_timer.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\FFT.map" -o .\Objects\FFT.axf

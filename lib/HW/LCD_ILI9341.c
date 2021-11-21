@@ -6,18 +6,18 @@
 void LCD_sendCommand(uint16_t com)
 {
   LCD_DC_RESET;
-	SPI3_CS_RESET;
-  SPI3_sendData(com);
-	SPI3_CS_SET;
+	SPI2_CS_RESET;
+  SPI2_sendData(com);
+	SPI2_CS_SET;
 }
 
 // посылка данных
 void LCD_sendData(uint16_t data)
 {
   LCD_DC_SET;
-	SPI3_CS_RESET;
-  SPI3_sendData(data);
-	SPI3_CS_SET;
+	SPI2_CS_RESET;
+  SPI2_sendData(data);
+	SPI2_CS_SET;
 }
 
 
@@ -25,12 +25,12 @@ void LCD_sendData(uint16_t data)
 void LCD_init(void)
 {	
 	// установка линии SPI
-	SPI3_CS_SET;
+	SPI2_CS_SET;
    
   // сброс дисплея
   LCD_RST_SET;
   LCD_sendCommand(ILI9341_RESET);
-  delay_ms(100);
+  delay_ms(MDR_TIMER2, 100);
    
   /// настройка дисплея
   LCD_sendCommand(ILI9341_POWERA);
@@ -125,7 +125,7 @@ void LCD_init(void)
   LCD_sendData(0x0F);
   LCD_sendCommand(ILI9341_SLEEP_OUT);
    
-  delay_ms(100);
+  delay_ms(MDR_TIMER2, 100);
   LCD_sendCommand(ILI9341_DISPLAY_ON);
   LCD_sendCommand(ILI9341_GRAM);
 	

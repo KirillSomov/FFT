@@ -14,7 +14,7 @@ uint32_t	ADC_sum = 0;
 // test
 
 // отрисовка шкал
-void interface_init(void)
+/*void interface_init(void)
 {
 	LCD_PRINT_STRING(175, 1, "0-312.5");
 	LCD_PRINT_STRING(176, 11, "312.5-625");
@@ -48,39 +48,37 @@ void interface_init(void)
 	LCD_PRINT_STRING(160, 291, "9062.5-9375");
 	LCD_PRINT_STRING(160, 301, "9375-9687.5");
 	LCD_PRINT_STRING(160, 311, "9687.5-10k");
-}
+}*/
 
 
 int main(void)
 {	
 	// тактирование
-	CPU_init();
+	clockSetup();
 	
-	// инициализация таймера
-	SysTick_init();
+	Timer2_init();
+
+	//
+	portsSetup();
 	
 	// инициализация АЦП
-	ADC_init();
-		
-	// инициализация модуля uart2
-	//uart2_init();
+	//ADC_init();
 	
 	// инициализация SPI2
 	SPI2_Init();
 	
 	// инициализация LCD
-	LCD_Init();
+	LCD_init();
 	
 	// белый фон LCD
-	LCD_Fill(0xFFFF);
+	//LCD_Fill(0xFFFF);
 	
 	// отрисовка шкал
-	interface_init();
+	//interface_init();
 	
-	// инициализация тест-пина
-	testPinPA2_init();
+	while(1);
 			
-#define	FFT_ENABLE_1
+#define	abcd
 #ifdef	FFT_ENABLE_1
 
 // ============== FFT ===================
