@@ -11,6 +11,8 @@ int16_t		realNumbers[64];
 uint8_t		column[32] = {0};
 uint32_t	ADC_sum = 0;
 
+uint16_t fillColor = 0;
+
 // test
 
 // отрисовка шкал
@@ -70,13 +72,20 @@ int main(void)
 	// инициализация LCD
 	LCD_init();
 	
+	
 	// белый фон LCD
 	//LCD_Fill(0xFFFF);
 	
 	// отрисовка шкал
 	//interface_init();
 	
-	while(1);
+	uint16_t prevFillColor = fillColor;
+	
+	while(1)
+	{
+		if(fillColor != prevFillColor)
+			LCD_fill(fillColor);
+	}
 			
 #define	abcd
 #ifdef	FFT_ENABLE_1

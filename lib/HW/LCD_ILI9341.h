@@ -17,8 +17,8 @@
 	#define LCD_RST_SET			PORT_SetBits(DO_LCD_RST_PORT,	DO_LCD_RST_PIN)
 
 	// вкл/выкл подсветки LCD
-	//#define	LCD_LED_OFF			MDR_PORTA->RXTX &= ~(1 << 7)
-	//#define	LCD_LED_ON			MDR_PORTA->RXTX |=	(1 << 7)
+	#define	LCD_LED_OFF			MDR_PORTA->RXTX &= ~(1 << 7)
+	#define	LCD_LED_ON			MDR_PORTA->RXTX |=	(1 << 7)
 
 
 	// параметры LCD

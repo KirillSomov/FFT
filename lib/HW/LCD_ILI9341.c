@@ -130,7 +130,7 @@ void LCD_init(void)
   LCD_sendCommand(ILI9341_GRAM);
 	
 	// вкл подсветка
-	//LCD_LED_ON;
+	LCD_LED_ON;
 }
 
 
