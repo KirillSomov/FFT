@@ -51,10 +51,19 @@ void portSetupSpi2(void)
 }
 
 
+// Настройка портов ADC
+void portSetupAdc(void)
+{
+	portSetupOe(ADC_MIC_PORT,			ADC_MIC_PIN,	PORT_OE_IN);
+	portSetupMode(ADC_MIC_PORT,		ADC_MIC_PIN,	PORT_MODE_ANALOG);
+}
+
+
 // SYS.00004 Инициализация портов
 void portsSetup(void)
 {
-	//portSetupGpi();				// SYS.00005 Настройка портов входных разовых команд
-	portSetupGpo();				// SYS.00006 Настройка портов выходных разовых команд
-	portSetupSpi2();			// SYS.00013 Настройка портов SPI
+	//portSetupGpi();		// SYS.00005 Настройка портов входных разовых команд
+	portSetupGpo();			// SYS.00006 Настройка портов выходных разовых команд
+	portSetupSpi2();		// SYS.00013 Настройка портов SPI
+	portSetupAdc();			// Настройка портов ADC
 }

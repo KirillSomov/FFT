@@ -6,51 +6,50 @@
 #define		VIRTUAL_GND_SHIFT	2020
 
 // Globals
-int16_t		imaginaryNumbers[64];
-int16_t		realNumbers[64];
+int16_t	imaginaryNumbers[64];
+int16_t	realNumbers[64];
 uint8_t		column[32] = {0};
 uint32_t	ADC_sum = 0;
 
 uint16_t fillColor = 0;
 
-// test
 
 // отрисовка шкал
-/*void interface_init(void)
+void interface_init(void)
 {
-	LCD_PRINT_STRING(175, 1, "0-312.5");
-	LCD_PRINT_STRING(176, 11, "312.5-625");
-	LCD_PRINT_STRING(176, 21, "625-937.5");
-	LCD_PRINT_STRING(167, 31, "937.5-1250");
-	LCD_PRINT_STRING(160, 41, "1250-1562.5");
-	LCD_PRINT_STRING(160, 51, "1562.5-1875");
-	LCD_PRINT_STRING(160, 61, "1875-2187.5");
-	LCD_PRINT_STRING(160, 71, "2187.5-2500");
-	LCD_PRINT_STRING(160, 81, "2500-2812.5");
-	LCD_PRINT_STRING(160, 91, "2812.5-3125");
-	LCD_PRINT_STRING(160, 101, "3125-3437.5");
-	LCD_PRINT_STRING(160, 111, "3437.5-3750");
-	LCD_PRINT_STRING(160, 121, "3750-4062.5");
-	LCD_PRINT_STRING(160, 131, "4062.5-4375");
-	LCD_PRINT_STRING(160, 141, "4375-4687.5");
-	LCD_PRINT_STRING(160, 151, "4687.5-5000");
-	LCD_PRINT_STRING(160, 161, "5000-5312.5");
-	LCD_PRINT_STRING(160, 171, "5312.5-5625");
-	LCD_PRINT_STRING(160, 181, "5625-5937.5");
-	LCD_PRINT_STRING(160, 191, "5937.5-6250");
-	LCD_PRINT_STRING(160, 201, "6250-6562.5");
-	LCD_PRINT_STRING(160, 211, "6562.5-6875");
-	LCD_PRINT_STRING(160, 221, "6875-7187.5");
-	LCD_PRINT_STRING(160, 231, "7187.5-7500");
-	LCD_PRINT_STRING(160, 241, "7500-7812.5");
-	LCD_PRINT_STRING(160, 251, "7812.5-8125");
-	LCD_PRINT_STRING(160, 261, "8125-8437.5");
-	LCD_PRINT_STRING(160, 271, "8437.5-8750");
-	LCD_PRINT_STRING(160, 281, "8750-9062.5");
-	LCD_PRINT_STRING(160, 291, "9062.5-9375");
-	LCD_PRINT_STRING(160, 301, "9375-9687.5");
-	LCD_PRINT_STRING(160, 311, "9687.5-10k");
-}*/
+	LCD_printString(175, 1, "0-312.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(176, 11, "312.5-625", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(176, 21, "625-937.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(167, 31, "937.5-1250", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 41, "1250-1562.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 51, "1562.5-1875", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 61, "1875-2187.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 71, "2187.5-2500", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 81, "2500-2812.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 91, "2812.5-3125", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 101, "3125-3437.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 111, "3437.5-3750", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 121, "3750-4062.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 131, "4062.5-4375", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 141, "4375-4687.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 151, "4687.5-5000", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 161, "5000-5312.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 171, "5312.5-5625", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 181, "5625-5937.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 191, "5937.5-6250", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 201, "6250-6562.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 211, "6562.5-6875", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 221, "6875-7187.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 231, "7187.5-7500", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 241, "7500-7812.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 251, "7812.5-8125", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 261, "8125-8437.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 271, "8437.5-8750", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 281, "8750-9062.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 291, "9062.5-9375", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 301, "9375-9687.5", 0x0000, &calibri_14ptFontInfo);
+	LCD_printString(160, 311, "9687.5-10k", 0x0000, &calibri_14ptFontInfo);
+}
 
 
 int main(void)
@@ -64,7 +63,7 @@ int main(void)
 	portsSetup();
 	
 	// инициализация АЦП
-	//ADC_init();
+	ADC_init();
 	
 	// инициализация SPI2
 	SPI2_Init();
@@ -74,21 +73,11 @@ int main(void)
 	
 	
 	// белый фон LCD
-	//LCD_Fill(0xFFFF);
+	LCD_fill(0xFFFF);
 	
 	// отрисовка шкал
-	//interface_init();
-	
-	uint16_t prevFillColor = fillColor;
-	
-	while(1)
-	{
-		if(fillColor != prevFillColor)
-			LCD_fill(fillColor);
-	}
+	interface_init();
 			
-#define	abcd
-#ifdef	FFT_ENABLE_1
 
 // ============== FFT ===================
 
@@ -104,7 +93,6 @@ int main(void)
 
 		for (uint8_t i = 0; i < 64; i++)
 		{
-			TEST_PA2_ON;
 			// Выполнение преобразования АЦП
 			/*
 				Получение 12-разрядного результата АЦП
@@ -122,8 +110,6 @@ int main(void)
 			// Установка мнимого число на ноль
 			imaginaryNumbers[i] = 0;
 			ADC_sum = 0;
-
-			TEST_PA2_OFF;
 			
 			/*
 				Эта задержка калибруется с помощью осциллографа 
@@ -132,16 +118,12 @@ int main(void)
 				с учетом накладных расходов
 				остальной части кода и времени выборки АЦП.
 			*/
-			TEST_PA3_ON;
 			
-			delay_us(20);
+			delay_us(MDR_TIMER2, 20);
 			
-			TEST_PA3_OFF;			
 			// Дополнительная задержка для получения 50 мкс за цикл
 		}
 		
-		#define	FFT_ENABLE_2
-		#ifdef	FFT_ENABLE_2
 		
 		// Выполнение прямого преобразования Фурье
 
@@ -213,8 +195,7 @@ int main(void)
 			вычисления квадратного корня. Поскольку К1986ВЕ92QI имеет 
 			аппаратное обеспечение умножения, 
 			необходимо оптимизировать только квадратный корень.
-		*/         
-		long place, root;
+		*/
 		
     for(uint8_t i = 0; i < 32; i++)
     {
@@ -225,31 +206,16 @@ int main(void)
 				из realNumbers [i], используя очень быстрое 
 				(но зависящее от компилятора) целочисленное приближение:
 			*/
-      // (взято из: http://www.codecodex.com/wiki/Calculate_an_integer_square_root)
-			
-      place = 0x40000000;
-			root = 0;
 			
 			if (realNumbers[i] >= 0) // Проверяем, что у нас нет отрицательного числа
 			{
-				while (place > realNumbers[i])
-				{
-					place = place >> 2; 
-				}
-				
-				while (place)  
-				{  
-					if (realNumbers[i] >= root + place)  
-					{  
-						realNumbers[i] = realNumbers[i] - root - place;  
-						root = root + (place << 1);  
-					}  
-					root = root >> 1;  
-					place = place >> 2;  
-				}
+				realNumbers[i] = sqrt(realNumbers[i]);
+			}
+			else
+			{
+				realNumbers[i] = 0;
 			}
 			
-			realNumbers[i] = root;
 			
 			/*
 			Теперь у нас есть 32 блока данных звуковой частоты, 
@@ -264,17 +230,15 @@ int main(void)
 			
 	    // Отрисовка гистограммы выходных данных БПФ
 			if(column[i] < realNumbers[i])
-				LCD_DrawFilledRectangle(0, i*10, realNumbers[i], i*10+9, 0);
+				LCD_drawFilledRectangle(0, i*10, realNumbers[i], i*10+9, 0);
 			if(column[i] > realNumbers[i])
-				LCD_DrawFilledRectangle(realNumbers[i], i*10, column[i], i*10+9, 0xFFFF);
+				LCD_drawFilledRectangle(realNumbers[i], i*10, column[i], i*10+9, 0xFFFF);
 			
 			column[i] = realNumbers[i];
 
 		}		
 		//delay_ms(16);
 		
-		#endif
 	}
-#endif
 	
 }

@@ -10,6 +10,7 @@
 ".\objects\port_cfg.o"
 ".\objects\port_setup.o"
 ".\objects\timer.o"
+".\objects\adc.o"
 ".\objects\startup_mdr32f9qx.o"
 ".\objects\system_mdr32f9qx.o"
 ".\objects\mdr32f9qx_bkp.o"

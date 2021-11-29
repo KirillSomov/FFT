@@ -2,21 +2,9 @@
 #include "ADC.h"
 
 
-/*---------- ADC PORTD init ----------*/
-void ADC_PORT_init(void)
-{
-	MDR_PORTD->OE			&= ~(1 << 4);			// PD4 на вход
-	MDR_PORTD->ANALOG	&= ~(1 << 4); 		// PD4 аналоговый порт
-}
-/*---------- ADC PORTD init ----------*/
-
-
 /*---------- ADC initialization ----------*/
 void ADC_init(void)
 {
-	// инициализация входа АЦП
-	ADC_PORT_init();
-	
 	// настройка АЦП
 	MDR_ADC->ADC1_CFG = ((1 << 0) 		// вкл. АЦП
 											|(0 << 1) 		// сброс бита «начала преобразования»

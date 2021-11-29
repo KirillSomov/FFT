@@ -19,8 +19,8 @@ void Timer2_init(void)
 	// Установка интервала генерации прерываний по переполнению
 	// Инициализация по умолчанию
 	TIMER_CntStructInit(&TIMER_CntInitStruct);
-	// 10 МГц / 10к = 1 кГц => счётчик считает на частоте 1 кГц, т.е. каждую 1 мс
-	TIMER_CntInitStruct.TIMER_Prescaler	=	9999;
+	// 10 МГц / 10 = 1 мГц => счётчик считает на частоте 1 мГц, т.е. каждую 1 мкс
+	TIMER_CntInitStruct.TIMER_Prescaler	=	9;
 	TIMER_CntInitStruct.TIMER_Period		=	0xFFFF;
 	
 	// Инициализация Таймера 2
@@ -36,13 +36,13 @@ void Timer2_init(void)
 
 
 /*!
-	\brief Блокирующая функия задержки в мс
+	\brief Блокирующая функия задержки в мкс
   \param TIMER	Указатель на таймер
-	\param ms			Время задержки в мс
+	\param ms			Время задержки в мкс
  */
-void delay_ms(MDR_TIMER_TypeDef *TIMER, uint16_t ms)
+void delay_us(MDR_TIMER_TypeDef *TIMER, uint16_t us)
 {
 	volatile uint16_t	startCount	=	TIMER->CNT;
 	
-	while(((uint16_t)((uint16_t)TIMER->CNT - startCount)) < ms) {;}
+	while(((uint16_t)((uint16_t)TIMER->CNT - startCount)) < us) {;}
 }

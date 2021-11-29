@@ -9,8 +9,8 @@
 	// Прототипы функций
 	void Timer2_init(void);										// Инициализация Таймера 2
 
-	void delay_ms(MDR_TIMER_TypeDef *TIMER,
-									uint16_t ms);							// Функия задержки в мс
+	void delay_us(MDR_TIMER_TypeDef *TIMER,
+									uint16_t us);							// Функия задержки в мс
 
 
 #endif

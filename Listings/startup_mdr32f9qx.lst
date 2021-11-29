@@ -320,20 +320,21 @@ ARM Macro Assembler    Page 5
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=.\objects\startup_mdr32f9qx.d -o.\objects\startup_mdr32f9qx.o -I.\
-RTE\Device\MDR1986BE92 -I.\RTE\_Target_1 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\
-CMSIS\Core\Include -IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config -IC:\Keil_
-v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport -IC:\Keil_v5\A
+RTE\Device\MDR1986BE92 -I.\RTE\_Target_1 -IC:\Users\somov\AppData\Local\Arm\Pac
+ks\ARM\CMSIS\5.5.1\CMSIS\Core\Include -IC:\Users\somov\AppData\Local\Arm\Packs\
+Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport -IC:\Users\somov\AppData
 
 
 
 ARM Macro Assembler    Page 6 
 
 
-RM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc -I
-C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\i
-nc --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 528" --prede
-fine="_RTE_ SETA 1" --predefine="USE_MDR32F9Q2_Rev1 SETA 1" --list=.\listings\s
-tartup_mdr32f9qx.lst RTE\Device\MDR1986BE92\startup_MDR32F9Qx.s
+\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32
+F9Qx\inc -IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Librar
+ies\MDR32F9Qx_StdPeriph_Driver\inc --predefine="__UVISION_VERSION SETA 531" --p
+redefine="_RTE_ SETA 1" --predefine="USE_MDR32F9Q2_Rev1 SETA 1" --predefine="_R
+TE_ SETA 1" --list=.\listings\startup_mdr32f9qx.lst RTE\Device\MDR1986BE92\star
+tup_MDR32F9Qx.s
 
 
 
@@ -843,4 +844,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-388 symbols in table
+387 symbols in table

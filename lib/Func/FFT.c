@@ -21,9 +21,6 @@
 
 ************************************************************************/
 
-#ifndef FFT_C
-#define FFT_C
-
 
 #include "FFT.h"
 
@@ -180,4 +177,30 @@ void fix_fft(int16_t fr[], int16_t fi[], uint8_t L)
 }
 
 
-#endif 
+int32_t sqrt(uint32_t num)
+{
+	// (взято из: http://www.codecodex.com/wiki/Calculate_an_integer_square_root)
+	
+	int32_t place, root;
+	
+	place = 0x40000000;
+	root = 0;
+	
+	while(place > num)
+	{
+		place = place >> 2;
+	}
+	
+	while(place)
+	{
+		if(num >= root + place)
+		{
+			num = num - root - place;
+			root = root + (place << 1);
+		}
+		root = root >> 1;
+		place = place >> 2;
+	}
+	
+	return root;
+}

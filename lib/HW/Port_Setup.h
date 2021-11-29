@@ -30,12 +30,16 @@
 
 	// I2C
 	
+	// ADC
+	#define	ADC_MIC_PORT									MDR_PORTD
+	#define	ADC_MIC_PIN										PORT_Pin_4
 	
 	// прототипы функций
 	void portsSetup(void);				// SYS.00004 Инициализация портов
 	void portSetupGpi(void);			// SYS.00005 Настройка портов входных разовых команд
 	void portSetupGpo(void);			// SYS.00006 Настройка портов выходных разовых команд
 	void portSetupSpi2(void);			// SYS.00013 Настройка портов SPI2
+	void portSetupAdc(void);			// Настройка портов ADC
 
 
 #endif
