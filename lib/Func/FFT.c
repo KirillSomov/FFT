@@ -204,3 +204,16 @@ int32_t sqrt(uint32_t num)
 	
 	return root;
 }
+
+/*void drawHistogram(int16_t realNumbers[])
+{
+	static int16_t column[32] = {0};
+	
+	// Отрисовка гистограммы выходных данных БПФ
+	if(column[i] < realNumbers[i])
+		LCD_drawFilledRectangle(0, i*10, realNumbers[i], i*10+9, 0);
+	if(column[i] > realNumbers[i])
+		LCD_drawFilledRectangle(realNumbers[i], i*10, column[i], i*10+9, 0xFFFF);
+	
+	column[i] = realNumbers[i];
+}*/

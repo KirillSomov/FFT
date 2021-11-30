@@ -30,18 +30,19 @@
 
 
 	// Definitions
-	#define N_WAVE      1024    // полная длина волны Sinewave[]
-	#define LOG2_N_WAVE 10      // log2(N_WAVE)
+	#define FFT_DOTS		64
+	#define N_WAVE			1024    // полная длина волны Sinewave[]
+	#define LOG2_N_WAVE	10      // log2(N_WAVE)
 	
 	
-	/*struct
+	struct complexNum
 	{
-		int16_t	imaginaryNumbers[64];
-		int16_t	realNumbers[64];
-	}complexNum;
+		int32_t	ReNum;
+		int32_t	ImNum;
+	};
 	
 	
-	extern struct complexNum fftNums;*/
+	extern struct complexNum fftNums[FFT_DOTS];
 	
 
 	// Since we only use 3/4 of N_WAVE, we define only
@@ -147,8 +148,10 @@
 
 
 	// прототипы функций
+	void getAdcSamples(struct complexNum *fftNums, uint16_t fftDots, uint32_t (*getAdcRes)(void));
 	void fix_fft(int16_t fr[], int16_t fi[], uint8_t L);
 	int32_t sqrt(uint32_t num);
+	void drawHistogram(int16_t realNumbers[]);
 
 
 #endif 

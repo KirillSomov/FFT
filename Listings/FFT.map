@@ -653,33 +653,33 @@ Image Symbol Table
     i.fix_fft                                0x08000d3c   Section        0  fft.o(i.fix_fft)
     i.interface_init                         0x08000f3c   Section        0  main.o(i.interface_init)
     i.main                                   0x080012cc   Section        0  main.o(i.main)
-    i.portSetupAdc                           0x08001420   Section        0  port_setup.o(i.portSetupAdc)
-    i.portSetupFunc                          0x0800143c   Section        0  port_cfg.o(i.portSetupFunc)
-    i.portSetupGpo                           0x080014b0   Section        0  port_setup.o(i.portSetupGpo)
-    i.portSetupMode                          0x080014d4   Section        0  port_cfg.o(i.portSetupMode)
-    i.portSetupOe                            0x080014e8   Section        0  port_cfg.o(i.portSetupOe)
-    i.portSetupPd                            0x080014fc   Section        0  port_cfg.o(i.portSetupPd)
-    i.portSetupPdShm                         0x08001510   Section        0  port_cfg.o(i.portSetupPdShm)
-    i.portSetupPullDown                      0x08001528   Section        0  port_cfg.o(i.portSetupPullDown)
-    i.portSetupPullUp                        0x0800153c   Section        0  port_cfg.o(i.portSetupPullUp)
-    i.portSetupSpeed                         0x08001554   Section        0  port_cfg.o(i.portSetupSpeed)
-    i.portSetupSpi2                          0x080015c8   Section        0  port_setup.o(i.portSetupSpi2)
-    i.portsSetup                             0x08001694   Section        0  port_setup.o(i.portsSetup)
-    i.portsSetupAsOutput                     0x080016a4   Section        0  port_cfg.o(i.portsSetupAsOutput)
-    i.sqrt                                   0x08001704   Section        0  fft.o(i.sqrt)
-    .constdata                               0x0800172e   Section     1536  fft.o(.constdata)
-    Sinewave                                 0x0800172e   Data        1536  fft.o(.constdata)
-    .constdata                               0x08001d30   Section     4152  font.o(.constdata)
-    Sinewave                                 0x08001d30   Data        1536  font.o(.constdata)
+    i.portSetupAdc                           0x0800142c   Section        0  port_setup.o(i.portSetupAdc)
+    i.portSetupFunc                          0x08001448   Section        0  port_cfg.o(i.portSetupFunc)
+    i.portSetupGpo                           0x080014bc   Section        0  port_setup.o(i.portSetupGpo)
+    i.portSetupMode                          0x080014e0   Section        0  port_cfg.o(i.portSetupMode)
+    i.portSetupOe                            0x080014f4   Section        0  port_cfg.o(i.portSetupOe)
+    i.portSetupPd                            0x08001508   Section        0  port_cfg.o(i.portSetupPd)
+    i.portSetupPdShm                         0x0800151c   Section        0  port_cfg.o(i.portSetupPdShm)
+    i.portSetupPullDown                      0x08001534   Section        0  port_cfg.o(i.portSetupPullDown)
+    i.portSetupPullUp                        0x08001548   Section        0  port_cfg.o(i.portSetupPullUp)
+    i.portSetupSpeed                         0x08001560   Section        0  port_cfg.o(i.portSetupSpeed)
+    i.portSetupSpi2                          0x080015d4   Section        0  port_setup.o(i.portSetupSpi2)
+    i.portsSetup                             0x080016a0   Section        0  port_setup.o(i.portsSetup)
+    i.portsSetupAsOutput                     0x080016b0   Section        0  port_cfg.o(i.portsSetupAsOutput)
+    i.sqrt                                   0x08001710   Section        0  fft.o(i.sqrt)
+    .constdata                               0x0800173a   Section     1536  fft.o(.constdata)
+    Sinewave                                 0x0800173a   Data        1536  fft.o(.constdata)
+    .constdata                               0x08001d3c   Section     4152  font.o(.constdata)
+    Sinewave                                 0x08001d3c   Data        1536  font.o(.constdata)
     .data                                    0x20000000   Section        6  main.o(.data)
     .data                                    0x20000008   Section        4  system_mdr32f9qx.o(.data)
-    .bss                                     0x2000000c   Section      288  main.o(.bss)
-    .bss                                     0x2000012c   Section       96  libspace.o(.bss)
-    HEAP                                     0x20000190   Section      512  startup_mdr32f9qx.o(HEAP)
-    Heap_Mem                                 0x20000190   Data         512  startup_mdr32f9qx.o(HEAP)
-    STACK                                    0x20000390   Section     1024  startup_mdr32f9qx.o(STACK)
-    Stack_Mem                                0x20000390   Data        1024  startup_mdr32f9qx.o(STACK)
-    __initial_sp                             0x20000790   Data           0  startup_mdr32f9qx.o(STACK)
+    .bss                                     0x2000000c   Section      320  main.o(.bss)
+    .bss                                     0x2000014c   Section       96  libspace.o(.bss)
+    HEAP                                     0x200001b0   Section      512  startup_mdr32f9qx.o(HEAP)
+    Heap_Mem                                 0x200001b0   Data         512  startup_mdr32f9qx.o(HEAP)
+    STACK                                    0x200003b0   Section     1024  startup_mdr32f9qx.o(STACK)
+    Stack_Mem                                0x200003b0   Data        1024  startup_mdr32f9qx.o(STACK)
+    __initial_sp                             0x200007b0   Data           0  startup_mdr32f9qx.o(STACK)
 
     Global Symbols
 
@@ -850,72 +850,72 @@ Image Symbol Table
     delay_us                                 0x08000d21   Thumb Code    26  timer.o(i.delay_us)
     fix_fft                                  0x08000d3d   Thumb Code   506  fft.o(i.fix_fft)
     interface_init                           0x08000f3d   Thumb Code   528  main.o(i.interface_init)
-    main                                     0x080012cd   Thumb Code   320  main.o(i.main)
-    portSetupAdc                             0x08001421   Thumb Code    24  port_setup.o(i.portSetupAdc)
-    portSetupFunc                            0x0800143d   Thumb Code   114  port_cfg.o(i.portSetupFunc)
-    portSetupGpo                             0x080014b1   Thumb Code    28  port_setup.o(i.portSetupGpo)
-    portSetupMode                            0x080014d5   Thumb Code    20  port_cfg.o(i.portSetupMode)
-    portSetupOe                              0x080014e9   Thumb Code    20  port_cfg.o(i.portSetupOe)
-    portSetupPd                              0x080014fd   Thumb Code    20  port_cfg.o(i.portSetupPd)
-    portSetupPdShm                           0x08001511   Thumb Code    24  port_cfg.o(i.portSetupPdShm)
-    portSetupPullDown                        0x08001529   Thumb Code    20  port_cfg.o(i.portSetupPullDown)
-    portSetupPullUp                          0x0800153d   Thumb Code    24  port_cfg.o(i.portSetupPullUp)
-    portSetupSpeed                           0x08001555   Thumb Code   114  port_cfg.o(i.portSetupSpeed)
-    portSetupSpi2                            0x080015c9   Thumb Code   200  port_setup.o(i.portSetupSpi2)
-    portsSetup                               0x08001695   Thumb Code    16  port_setup.o(i.portsSetup)
-    portsSetupAsOutput                       0x080016a5   Thumb Code    96  port_cfg.o(i.portsSetupAsOutput)
-    sqrt                                     0x08001705   Thumb Code    42  fft.o(i.sqrt)
-    calibri_14ptBitmaps                      0x08002330   Data         590  font.o(.constdata)
-    calibri_14ptDescriptorsBlock0            0x0800257e   Data          12  font.o(.constdata)
-    calibri_14ptDescriptorsBlock1            0x0800258a   Data          12  font.o(.constdata)
-    calibri_14ptDescriptorsBlock2            0x08002596   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock3            0x0800259c   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock4            0x080025a2   Data          12  font.o(.constdata)
-    calibri_14ptDescriptorsBlock5            0x080025ae   Data          18  font.o(.constdata)
-    calibri_14ptDescriptorsBlock6            0x080025c0   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock7            0x080025c6   Data          12  font.o(.constdata)
-    calibri_14ptDescriptorsBlock8            0x080025d2   Data          24  font.o(.constdata)
-    calibri_14ptDescriptorsBlock9            0x080025ea   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock10           0x080025f0   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock11           0x080025f6   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock12           0x080025fc   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock13           0x08002602   Data          24  font.o(.constdata)
-    calibri_14ptDescriptorsBlock14           0x0800261a   Data          42  font.o(.constdata)
-    calibri_14ptDescriptorsBlock15           0x08002644   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock16           0x0800264a   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock17           0x08002650   Data           6  font.o(.constdata)
-    calibri_14ptDescriptorsBlock18           0x08002656   Data           6  font.o(.constdata)
-    calibri_14ptBlockLookup                  0x0800265c   Data         152  font.o(.constdata)
-    calibri_14ptFontInfo                     0x080026f4   Data          20  font.o(.constdata)
-    impact_18ptBitmaps                       0x08002708   Data        1242  font.o(.constdata)
-    impact_18ptDescriptorsBlock0             0x08002be2   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock1             0x08002be8   Data          66  font.o(.constdata)
-    impact_18ptDescriptorsBlock2             0x08002c2a   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock3             0x08002c30   Data          30  font.o(.constdata)
-    impact_18ptDescriptorsBlock4             0x08002c4e   Data          12  font.o(.constdata)
-    impact_18ptDescriptorsBlock5             0x08002c5a   Data          12  font.o(.constdata)
-    impact_18ptDescriptorsBlock6             0x08002c66   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock7             0x08002c6c   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock8             0x08002c72   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock9             0x08002c78   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock10            0x08002c7e   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock11            0x08002c84   Data           6  font.o(.constdata)
-    impact_18ptDescriptorsBlock12            0x08002c8a   Data          12  font.o(.constdata)
-    impact_18ptDescriptorsBlock13            0x08002c96   Data          30  font.o(.constdata)
-    impact_18ptDescriptorsBlock14            0x08002cb4   Data          24  font.o(.constdata)
-    impact_18ptDescriptorsBlock15            0x08002ccc   Data           6  font.o(.constdata)
-    impact_18ptBlockLookup                   0x08002cd4   Data         128  font.o(.constdata)
-    impact_18ptFontInfo                      0x08002d54   Data          20  font.o(.constdata)
-    Region$$Table$$Base                      0x08002d68   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08002d88   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x080012cd   Thumb Code   330  main.o(i.main)
+    portSetupAdc                             0x0800142d   Thumb Code    24  port_setup.o(i.portSetupAdc)
+    portSetupFunc                            0x08001449   Thumb Code   114  port_cfg.o(i.portSetupFunc)
+    portSetupGpo                             0x080014bd   Thumb Code    28  port_setup.o(i.portSetupGpo)
+    portSetupMode                            0x080014e1   Thumb Code    20  port_cfg.o(i.portSetupMode)
+    portSetupOe                              0x080014f5   Thumb Code    20  port_cfg.o(i.portSetupOe)
+    portSetupPd                              0x08001509   Thumb Code    20  port_cfg.o(i.portSetupPd)
+    portSetupPdShm                           0x0800151d   Thumb Code    24  port_cfg.o(i.portSetupPdShm)
+    portSetupPullDown                        0x08001535   Thumb Code    20  port_cfg.o(i.portSetupPullDown)
+    portSetupPullUp                          0x08001549   Thumb Code    24  port_cfg.o(i.portSetupPullUp)
+    portSetupSpeed                           0x08001561   Thumb Code   114  port_cfg.o(i.portSetupSpeed)
+    portSetupSpi2                            0x080015d5   Thumb Code   200  port_setup.o(i.portSetupSpi2)
+    portsSetup                               0x080016a1   Thumb Code    16  port_setup.o(i.portsSetup)
+    portsSetupAsOutput                       0x080016b1   Thumb Code    96  port_cfg.o(i.portsSetupAsOutput)
+    sqrt                                     0x08001711   Thumb Code    42  fft.o(i.sqrt)
+    calibri_14ptBitmaps                      0x0800233c   Data         590  font.o(.constdata)
+    calibri_14ptDescriptorsBlock0            0x0800258a   Data          12  font.o(.constdata)
+    calibri_14ptDescriptorsBlock1            0x08002596   Data          12  font.o(.constdata)
+    calibri_14ptDescriptorsBlock2            0x080025a2   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock3            0x080025a8   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock4            0x080025ae   Data          12  font.o(.constdata)
+    calibri_14ptDescriptorsBlock5            0x080025ba   Data          18  font.o(.constdata)
+    calibri_14ptDescriptorsBlock6            0x080025cc   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock7            0x080025d2   Data          12  font.o(.constdata)
+    calibri_14ptDescriptorsBlock8            0x080025de   Data          24  font.o(.constdata)
+    calibri_14ptDescriptorsBlock9            0x080025f6   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock10           0x080025fc   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock11           0x08002602   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock12           0x08002608   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock13           0x0800260e   Data          24  font.o(.constdata)
+    calibri_14ptDescriptorsBlock14           0x08002626   Data          42  font.o(.constdata)
+    calibri_14ptDescriptorsBlock15           0x08002650   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock16           0x08002656   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock17           0x0800265c   Data           6  font.o(.constdata)
+    calibri_14ptDescriptorsBlock18           0x08002662   Data           6  font.o(.constdata)
+    calibri_14ptBlockLookup                  0x08002668   Data         152  font.o(.constdata)
+    calibri_14ptFontInfo                     0x08002700   Data          20  font.o(.constdata)
+    impact_18ptBitmaps                       0x08002714   Data        1242  font.o(.constdata)
+    impact_18ptDescriptorsBlock0             0x08002bee   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock1             0x08002bf4   Data          66  font.o(.constdata)
+    impact_18ptDescriptorsBlock2             0x08002c36   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock3             0x08002c3c   Data          30  font.o(.constdata)
+    impact_18ptDescriptorsBlock4             0x08002c5a   Data          12  font.o(.constdata)
+    impact_18ptDescriptorsBlock5             0x08002c66   Data          12  font.o(.constdata)
+    impact_18ptDescriptorsBlock6             0x08002c72   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock7             0x08002c78   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock8             0x08002c7e   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock9             0x08002c84   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock10            0x08002c8a   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock11            0x08002c90   Data           6  font.o(.constdata)
+    impact_18ptDescriptorsBlock12            0x08002c96   Data          12  font.o(.constdata)
+    impact_18ptDescriptorsBlock13            0x08002ca2   Data          30  font.o(.constdata)
+    impact_18ptDescriptorsBlock14            0x08002cc0   Data          24  font.o(.constdata)
+    impact_18ptDescriptorsBlock15            0x08002cd8   Data           6  font.o(.constdata)
+    impact_18ptBlockLookup                   0x08002ce0   Data         128  font.o(.constdata)
+    impact_18ptFontInfo                      0x08002d60   Data          20  font.o(.constdata)
+    Region$$Table$$Base                      0x08002d74   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002d94   Number         0  anon$$obj.o(Region$$Table)
     ADC_sum                                  0x20000000   Data           4  main.o(.data)
     fillColor                                0x20000004   Data           2  main.o(.data)
     SystemCoreClock                          0x20000008   Data           4  system_mdr32f9qx.o(.data)
     imaginaryNumbers                         0x2000000c   Data         128  main.o(.bss)
     realNumbers                              0x2000008c   Data         128  main.o(.bss)
-    column                                   0x2000010c   Data          32  main.o(.bss)
-    __libspace_start                         0x2000012c   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x2000018c   Data           0  libspace.o(.bss)
+    column                                   0x2000010c   Data          64  main.o(.bss)
+    __libspace_start                         0x2000014c   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x200001ac   Data           0  libspace.o(.bss)
 
 
 
@@ -925,153 +925,153 @@ Memory Map of the image
 
   Image Entry point : 0x0800015d
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00002d94, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00002da0, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002d88, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002d94, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x000000c0   Data   RO          770    RESET               startup_mdr32f9qx.o
-    0x080000c0   0x080000c0   0x00000008   Code   RO         1574  * !!!main             c_w.l(__main.o)
-    0x080000c8   0x080000c8   0x00000034   Code   RO         1746    !!!scatter          c_w.l(__scatter.o)
-    0x080000fc   0x080000fc   0x0000001a   Code   RO         1748    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x08000000   0x08000000   0x000000c0   Data   RO          772    RESET               startup_mdr32f9qx.o
+    0x080000c0   0x080000c0   0x00000008   Code   RO         1576  * !!!main             c_w.l(__main.o)
+    0x080000c8   0x080000c8   0x00000034   Code   RO         1748    !!!scatter          c_w.l(__scatter.o)
+    0x080000fc   0x080000fc   0x0000001a   Code   RO         1750    !!handler_copy      c_w.l(__scatter_copy.o)
     0x08000116   0x08000116   0x00000002   PAD
-    0x08000118   0x08000118   0x0000001c   Code   RO         1750    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x08000134   0x08000134   0x00000002   Code   RO         1616    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1623    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1625    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1628    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1630    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1632    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1635    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1637    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1639    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1641    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1643    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1645    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1647    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1649    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1651    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1653    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1655    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1659    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1661    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1663    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000000   Code   RO         1665    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x08000136   0x08000136   0x00000002   Code   RO         1666    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x08000138   0x08000138   0x00000002   Code   RO         1686    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0800013a   0x0800013a   0x00000000   Code   RO         1699    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x0800013a   0x0800013a   0x00000000   Code   RO         1701    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x0800013a   0x0800013a   0x00000000   Code   RO         1704    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x0800013a   0x0800013a   0x00000000   Code   RO         1707    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x0800013a   0x0800013a   0x00000000   Code   RO         1709    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x0800013a   0x0800013a   0x00000000   Code   RO         1712    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x0800013a   0x0800013a   0x00000002   Code   RO         1713    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x0800013c   0x0800013c   0x00000000   Code   RO         1584    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x0800013c   0x0800013c   0x00000000   Code   RO         1593    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x0800013c   0x0800013c   0x00000006   Code   RO         1605    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x08000142   0x08000142   0x00000000   Code   RO         1595    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x08000142   0x08000142   0x00000004   Code   RO         1596    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO         1598    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x08000146   0x08000146   0x00000008   Code   RO         1599    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x0800014e   0x0800014e   0x00000002   Code   RO         1620    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x08000150   0x08000150   0x00000000   Code   RO         1668    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x08000150   0x08000150   0x00000004   Code   RO         1669    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x08000154   0x08000154   0x00000006   Code   RO         1670    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x08000118   0x08000118   0x0000001c   Code   RO         1752    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x08000134   0x08000134   0x00000002   Code   RO         1618    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1625    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1627    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1630    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1632    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1634    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1637    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1639    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1641    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1643    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1645    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1647    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1649    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1651    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1653    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1655    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1657    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1661    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1663    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1665    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000000   Code   RO         1667    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x08000136   0x08000136   0x00000002   Code   RO         1668    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x08000138   0x08000138   0x00000002   Code   RO         1688    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0800013a   0x0800013a   0x00000000   Code   RO         1701    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0800013a   0x0800013a   0x00000000   Code   RO         1703    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0800013a   0x0800013a   0x00000000   Code   RO         1706    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x0800013a   0x0800013a   0x00000000   Code   RO         1709    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x0800013a   0x0800013a   0x00000000   Code   RO         1711    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0800013a   0x0800013a   0x00000000   Code   RO         1714    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0800013a   0x0800013a   0x00000002   Code   RO         1715    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x0800013c   0x0800013c   0x00000000   Code   RO         1586    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0800013c   0x0800013c   0x00000000   Code   RO         1595    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0800013c   0x0800013c   0x00000006   Code   RO         1607    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x08000142   0x08000142   0x00000000   Code   RO         1597    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x08000142   0x08000142   0x00000004   Code   RO         1598    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO         1600    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x08000146   0x08000146   0x00000008   Code   RO         1601    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0800014e   0x0800014e   0x00000002   Code   RO         1622    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000150   0x08000150   0x00000000   Code   RO         1670    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000150   0x08000150   0x00000004   Code   RO         1671    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x08000154   0x08000154   0x00000006   Code   RO         1672    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x0800015a   0x0800015a   0x00000002   PAD
-    0x0800015c   0x0800015c   0x00000040   Code   RO          771  * .text               startup_mdr32f9qx.o
-    0x0800019c   0x0800019c   0x00000006   Code   RO         1572    .text               c_w.l(heapauxi.o)
-    0x080001a2   0x080001a2   0x0000004a   Code   RO         1607    .text               c_w.l(sys_stackheap_outer.o)
-    0x080001ec   0x080001ec   0x00000012   Code   RO         1609    .text               c_w.l(exit.o)
+    0x0800015c   0x0800015c   0x00000040   Code   RO          773  * .text               startup_mdr32f9qx.o
+    0x0800019c   0x0800019c   0x00000006   Code   RO         1574    .text               c_w.l(heapauxi.o)
+    0x080001a2   0x080001a2   0x0000004a   Code   RO         1609    .text               c_w.l(sys_stackheap_outer.o)
+    0x080001ec   0x080001ec   0x00000012   Code   RO         1611    .text               c_w.l(exit.o)
     0x080001fe   0x080001fe   0x00000002   PAD
-    0x08000200   0x08000200   0x00000008   Code   RO         1617    .text               c_w.l(libspace.o)
-    0x08000208   0x08000208   0x0000000c   Code   RO         1678    .text               c_w.l(sys_exit.o)
-    0x08000214   0x08000214   0x00000002   Code   RO         1689    .text               c_w.l(use_no_semi.o)
-    0x08000216   0x08000216   0x00000000   Code   RO         1691    .text               c_w.l(indicate_semi.o)
+    0x08000200   0x08000200   0x00000008   Code   RO         1619    .text               c_w.l(libspace.o)
+    0x08000208   0x08000208   0x0000000c   Code   RO         1680    .text               c_w.l(sys_exit.o)
+    0x08000214   0x08000214   0x00000002   Code   RO         1691    .text               c_w.l(use_no_semi.o)
+    0x08000216   0x08000216   0x00000000   Code   RO         1693    .text               c_w.l(indicate_semi.o)
     0x08000216   0x08000216   0x00000002   PAD
-    0x08000218   0x08000218   0x00000010   Code   RO          736    i.ADC_init          adc.o
-    0x08000228   0x08000228   0x00000038   Code   RO          737    i.ADC_read          adc.o
-    0x08000260   0x08000260   0x00000086   Code   RO          407    i.LCD_drawFilledRectangle  lcd_ili9341.o
-    0x080002e6   0x080002e6   0x00000030   Code   RO          409    i.LCD_drawPixel     lcd_ili9341.o
-    0x08000316   0x08000316   0x0000003a   Code   RO          410    i.LCD_fill          lcd_ili9341.o
-    0x08000350   0x08000350   0x0000027c   Code   RO          411    i.LCD_init          lcd_ili9341.o
-    0x080005cc   0x080005cc   0x00000120   Code   RO          412    i.LCD_printChar     lcd_ili9341.o
-    0x080006ec   0x080006ec   0x00000044   Code   RO          413    i.LCD_printString   lcd_ili9341.o
-    0x08000730   0x08000730   0x00000034   Code   RO          414    i.LCD_sendCommand   lcd_ili9341.o
-    0x08000764   0x08000764   0x00000034   Code   RO          415    i.LCD_sendData      lcd_ili9341.o
-    0x08000798   0x08000798   0x0000004c   Code   RO          416    i.LCD_setCursorPosition  lcd_ili9341.o
-    0x080007e4   0x080007e4   0x0000001c   Code   RO          929    i.PORT_ResetBits    mdr32f9qx_port.o
-    0x08000800   0x08000800   0x0000001c   Code   RO          930    i.PORT_SetBits      mdr32f9qx_port.o
-    0x0800081c   0x0800081c   0x0000000c   Code   RO         1000    i.RST_CLK_CPU_PLLcmd  mdr32f9qx_rst_clk.o
-    0x08000828   0x08000828   0x00000040   Code   RO         1001    i.RST_CLK_CPU_PLLconfig  mdr32f9qx_rst_clk.o
-    0x08000868   0x08000868   0x00000034   Code   RO         1002    i.RST_CLK_CPU_PLLstatus  mdr32f9qx_rst_clk.o
-    0x0800089c   0x0800089c   0x0000000c   Code   RO         1003    i.RST_CLK_CPU_PLLuse  mdr32f9qx_rst_clk.o
-    0x080008a8   0x080008a8   0x00000018   Code   RO         1004    i.RST_CLK_CPUclkPrescaler  mdr32f9qx_rst_clk.o
-    0x080008c0   0x080008c0   0x00000014   Code   RO         1005    i.RST_CLK_CPUclkSelection  mdr32f9qx_rst_clk.o
-    0x080008d4   0x080008d4   0x00000034   Code   RO         1008    i.RST_CLK_GetFlagStatus  mdr32f9qx_rst_clk.o
-    0x08000908   0x08000908   0x0000003c   Code   RO         1010    i.RST_CLK_HSEconfig  mdr32f9qx_rst_clk.o
-    0x08000944   0x08000944   0x00000034   Code   RO         1011    i.RST_CLK_HSEstatus  mdr32f9qx_rst_clk.o
-    0x08000978   0x08000978   0x00000020   Code   RO         1021    i.RST_CLK_PCLKcmd   mdr32f9qx_rst_clk.o
-    0x08000998   0x08000998   0x00000028   Code   RO          490    i.SPI2_Init         spi.o
-    0x080009c0   0x080009c0   0x00000014   Code   RO          491    i.SPI2_Reset        spi.o
-    0x080009d4   0x080009d4   0x00000028   Code   RO          492    i.SPI2_sendData     spi.o
-    0x080009fc   0x080009fc   0x00000090   Code   RO          778    i.SystemCoreClockUpdate  system_mdr32f9qx.o
-    0x08000a8c   0x08000a8c   0x00000040   Code   RO          779    i.SystemInit        system_mdr32f9qx.o
-    0x08000acc   0x08000acc   0x00000054   Code   RO         1219    i.TIMER_BRGInit     mdr32f9qx_timer.o
-    0x08000b20   0x08000b20   0x00000014   Code   RO         1246    i.TIMER_Cmd         mdr32f9qx_timer.o
-    0x08000b34   0x08000b34   0x00000036   Code   RO         1249    i.TIMER_CntInit     mdr32f9qx_timer.o
-    0x08000b6a   0x08000b6a   0x0000001c   Code   RO         1250    i.TIMER_CntStructInit  mdr32f9qx_timer.o
-    0x08000b86   0x08000b86   0x00000044   Code   RO         1253    i.TIMER_DeInit      mdr32f9qx_timer.o
+    0x08000218   0x08000218   0x00000010   Code   RO          738    i.ADC_init          adc.o
+    0x08000228   0x08000228   0x00000038   Code   RO          739    i.ADC_read          adc.o
+    0x08000260   0x08000260   0x00000086   Code   RO          409    i.LCD_drawFilledRectangle  lcd_ili9341.o
+    0x080002e6   0x080002e6   0x00000030   Code   RO          411    i.LCD_drawPixel     lcd_ili9341.o
+    0x08000316   0x08000316   0x0000003a   Code   RO          412    i.LCD_fill          lcd_ili9341.o
+    0x08000350   0x08000350   0x0000027c   Code   RO          413    i.LCD_init          lcd_ili9341.o
+    0x080005cc   0x080005cc   0x00000120   Code   RO          414    i.LCD_printChar     lcd_ili9341.o
+    0x080006ec   0x080006ec   0x00000044   Code   RO          415    i.LCD_printString   lcd_ili9341.o
+    0x08000730   0x08000730   0x00000034   Code   RO          416    i.LCD_sendCommand   lcd_ili9341.o
+    0x08000764   0x08000764   0x00000034   Code   RO          417    i.LCD_sendData      lcd_ili9341.o
+    0x08000798   0x08000798   0x0000004c   Code   RO          418    i.LCD_setCursorPosition  lcd_ili9341.o
+    0x080007e4   0x080007e4   0x0000001c   Code   RO          931    i.PORT_ResetBits    mdr32f9qx_port.o
+    0x08000800   0x08000800   0x0000001c   Code   RO          932    i.PORT_SetBits      mdr32f9qx_port.o
+    0x0800081c   0x0800081c   0x0000000c   Code   RO         1002    i.RST_CLK_CPU_PLLcmd  mdr32f9qx_rst_clk.o
+    0x08000828   0x08000828   0x00000040   Code   RO         1003    i.RST_CLK_CPU_PLLconfig  mdr32f9qx_rst_clk.o
+    0x08000868   0x08000868   0x00000034   Code   RO         1004    i.RST_CLK_CPU_PLLstatus  mdr32f9qx_rst_clk.o
+    0x0800089c   0x0800089c   0x0000000c   Code   RO         1005    i.RST_CLK_CPU_PLLuse  mdr32f9qx_rst_clk.o
+    0x080008a8   0x080008a8   0x00000018   Code   RO         1006    i.RST_CLK_CPUclkPrescaler  mdr32f9qx_rst_clk.o
+    0x080008c0   0x080008c0   0x00000014   Code   RO         1007    i.RST_CLK_CPUclkSelection  mdr32f9qx_rst_clk.o
+    0x080008d4   0x080008d4   0x00000034   Code   RO         1010    i.RST_CLK_GetFlagStatus  mdr32f9qx_rst_clk.o
+    0x08000908   0x08000908   0x0000003c   Code   RO         1012    i.RST_CLK_HSEconfig  mdr32f9qx_rst_clk.o
+    0x08000944   0x08000944   0x00000034   Code   RO         1013    i.RST_CLK_HSEstatus  mdr32f9qx_rst_clk.o
+    0x08000978   0x08000978   0x00000020   Code   RO         1023    i.RST_CLK_PCLKcmd   mdr32f9qx_rst_clk.o
+    0x08000998   0x08000998   0x00000028   Code   RO          492    i.SPI2_Init         spi.o
+    0x080009c0   0x080009c0   0x00000014   Code   RO          493    i.SPI2_Reset        spi.o
+    0x080009d4   0x080009d4   0x00000028   Code   RO          494    i.SPI2_sendData     spi.o
+    0x080009fc   0x080009fc   0x00000090   Code   RO          780    i.SystemCoreClockUpdate  system_mdr32f9qx.o
+    0x08000a8c   0x08000a8c   0x00000040   Code   RO          781    i.SystemInit        system_mdr32f9qx.o
+    0x08000acc   0x08000acc   0x00000054   Code   RO         1221    i.TIMER_BRGInit     mdr32f9qx_timer.o
+    0x08000b20   0x08000b20   0x00000014   Code   RO         1248    i.TIMER_Cmd         mdr32f9qx_timer.o
+    0x08000b34   0x08000b34   0x00000036   Code   RO         1251    i.TIMER_CntInit     mdr32f9qx_timer.o
+    0x08000b6a   0x08000b6a   0x0000001c   Code   RO         1252    i.TIMER_CntStructInit  mdr32f9qx_timer.o
+    0x08000b86   0x08000b86   0x00000044   Code   RO         1255    i.TIMER_DeInit      mdr32f9qx_timer.o
     0x08000bca   0x08000bca   0x00000002   PAD
-    0x08000bcc   0x08000bcc   0x0000007c   Code   RO          697    i.Timer2_init       timer.o
-    0x08000c48   0x08000c48   0x00000078   Code   RO          366    i.clockCpuSetup     cpu.o
-    0x08000cc0   0x08000cc0   0x00000054   Code   RO          367    i.clockPeriphInit   cpu.o
-    0x08000d14   0x08000d14   0x0000000c   Code   RO          368    i.clockSetup        cpu.o
-    0x08000d20   0x08000d20   0x0000001a   Code   RO          698    i.delay_us          timer.o
+    0x08000bcc   0x08000bcc   0x0000007c   Code   RO          699    i.Timer2_init       timer.o
+    0x08000c48   0x08000c48   0x00000078   Code   RO          368    i.clockCpuSetup     cpu.o
+    0x08000cc0   0x08000cc0   0x00000054   Code   RO          369    i.clockPeriphInit   cpu.o
+    0x08000d14   0x08000d14   0x0000000c   Code   RO          370    i.clockSetup        cpu.o
+    0x08000d20   0x08000d20   0x0000001a   Code   RO          700    i.delay_us          timer.o
     0x08000d3a   0x08000d3a   0x00000002   PAD
-    0x08000d3c   0x08000d3c   0x00000200   Code   RO          125    i.fix_fft           fft.o
+    0x08000d3c   0x08000d3c   0x00000200   Code   RO          126    i.fix_fft           fft.o
     0x08000f3c   0x08000f3c   0x00000390   Code   RO            4    i.interface_init    main.o
-    0x080012cc   0x080012cc   0x00000154   Code   RO            5    i.main              main.o
-    0x08001420   0x08001420   0x0000001c   Code   RO          644    i.portSetupAdc      port_setup.o
-    0x0800143c   0x0800143c   0x00000072   Code   RO          535    i.portSetupFunc     port_cfg.o
-    0x080014ae   0x080014ae   0x00000002   PAD
-    0x080014b0   0x080014b0   0x00000024   Code   RO          646    i.portSetupGpo      port_setup.o
-    0x080014d4   0x080014d4   0x00000014   Code   RO          537    i.portSetupMode     port_cfg.o
-    0x080014e8   0x080014e8   0x00000014   Code   RO          538    i.portSetupOe       port_cfg.o
-    0x080014fc   0x080014fc   0x00000014   Code   RO          539    i.portSetupPd       port_cfg.o
-    0x08001510   0x08001510   0x00000018   Code   RO          540    i.portSetupPdShm    port_cfg.o
-    0x08001528   0x08001528   0x00000014   Code   RO          541    i.portSetupPullDown  port_cfg.o
-    0x0800153c   0x0800153c   0x00000018   Code   RO          542    i.portSetupPullUp   port_cfg.o
-    0x08001554   0x08001554   0x00000072   Code   RO          543    i.portSetupSpeed    port_cfg.o
-    0x080015c6   0x080015c6   0x00000002   PAD
-    0x080015c8   0x080015c8   0x000000cc   Code   RO          647    i.portSetupSpi2     port_setup.o
-    0x08001694   0x08001694   0x00000010   Code   RO          648    i.portsSetup        port_setup.o
-    0x080016a4   0x080016a4   0x00000060   Code   RO          545    i.portsSetupAsOutput  port_cfg.o
-    0x08001704   0x08001704   0x0000002a   Code   RO          126    i.sqrt              fft.o
-    0x0800172e   0x0800172e   0x00000600   Data   RO          127    .constdata          fft.o
-    0x08001d2e   0x08001d2e   0x00000002   PAD
-    0x08001d30   0x08001d30   0x00001038   Data   RO          163    .constdata          font.o
-    0x08002d68   0x08002d68   0x00000020   Data   RO         1744    Region$$Table       anon$$obj.o
+    0x080012cc   0x080012cc   0x00000160   Code   RO            5    i.main              main.o
+    0x0800142c   0x0800142c   0x0000001c   Code   RO          646    i.portSetupAdc      port_setup.o
+    0x08001448   0x08001448   0x00000072   Code   RO          537    i.portSetupFunc     port_cfg.o
+    0x080014ba   0x080014ba   0x00000002   PAD
+    0x080014bc   0x080014bc   0x00000024   Code   RO          648    i.portSetupGpo      port_setup.o
+    0x080014e0   0x080014e0   0x00000014   Code   RO          539    i.portSetupMode     port_cfg.o
+    0x080014f4   0x080014f4   0x00000014   Code   RO          540    i.portSetupOe       port_cfg.o
+    0x08001508   0x08001508   0x00000014   Code   RO          541    i.portSetupPd       port_cfg.o
+    0x0800151c   0x0800151c   0x00000018   Code   RO          542    i.portSetupPdShm    port_cfg.o
+    0x08001534   0x08001534   0x00000014   Code   RO          543    i.portSetupPullDown  port_cfg.o
+    0x08001548   0x08001548   0x00000018   Code   RO          544    i.portSetupPullUp   port_cfg.o
+    0x08001560   0x08001560   0x00000072   Code   RO          545    i.portSetupSpeed    port_cfg.o
+    0x080015d2   0x080015d2   0x00000002   PAD
+    0x080015d4   0x080015d4   0x000000cc   Code   RO          649    i.portSetupSpi2     port_setup.o
+    0x080016a0   0x080016a0   0x00000010   Code   RO          650    i.portsSetup        port_setup.o
+    0x080016b0   0x080016b0   0x00000060   Code   RO          547    i.portsSetupAsOutput  port_cfg.o
+    0x08001710   0x08001710   0x0000002a   Code   RO          127    i.sqrt              fft.o
+    0x0800173a   0x0800173a   0x00000600   Data   RO          128    .constdata          fft.o
+    0x08001d3a   0x08001d3a   0x00000002   PAD
+    0x08001d3c   0x08001d3c   0x00001038   Data   RO          165    .constdata          font.o
+    0x08002d74   0x08002d74   0x00000020   Data   RO         1746    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08002d88, Size: 0x0000000c, Max: 0xffffffff, ABSOLUTE)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x20000000   0x08002d88   0x00000006   Data   RW            8    .data               main.o
-    0x20000006   0x08002d8e   0x00000002   PAD
-    0x20000008   0x08002d90   0x00000004   Data   RW          780    .data               system_mdr32f9qx.o
-
-
-    Execution Region ER_ZI (Exec base: 0x2000000c, Load base: 0x08002d94, Size: 0x00000784, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08002d94, Size: 0x0000000c, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x2000000c        -       0x00000120   Zero   RW            6    .bss                main.o
-    0x2000012c        -       0x00000060   Zero   RW         1618    .bss                c_w.l(libspace.o)
-    0x2000018c   0x08002d94   0x00000004   PAD
-    0x20000190        -       0x00000200   Zero   RW          769    HEAP                startup_mdr32f9qx.o
-    0x20000390        -       0x00000400   Zero   RW          768    STACK               startup_mdr32f9qx.o
+    0x20000000   0x08002d94   0x00000006   Data   RW            8    .data               main.o
+    0x20000006   0x08002d9a   0x00000002   PAD
+    0x20000008   0x08002d9c   0x00000004   Data   RW          782    .data               system_mdr32f9qx.o
+
+
+    Execution Region ER_ZI (Exec base: 0x2000000c, Load base: 0x08002da0, Size: 0x000007a4, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000000c        -       0x00000140   Zero   RW            6    .bss                main.o
+    0x2000014c        -       0x00000060   Zero   RW         1620    .bss                c_w.l(libspace.o)
+    0x200001ac   0x08002da0   0x00000004   PAD
+    0x200001b0        -       0x00000200   Zero   RW          771    HEAP                startup_mdr32f9qx.o
+    0x200003b0        -       0x00000400   Zero   RW          770    STACK               startup_mdr32f9qx.o
 
 
 ==============================================================================
@@ -1083,10 +1083,10 @@ Image component sizes
 
         72         12          0          0          0        854   adc.o
        216          8          0          0          0       1431   cpu.o
-       554          6       1536          0          0       2745   fft.o
+       554          6       1536          0          0       2855   fft.o
          0          0       4152          0          0       4898   font.o
       1412         32          0          0          0       7171   lcd_ili9341.o
-      1252        404          0          6        288      85128   main.o
+      1264        406          0          6        320      85238   main.o
         56         12          0          0          0       1988   mdr32f9qx_port.o
        380         52          0          0          0       9848   mdr32f9qx_rst_clk.o
        254         16          0          0          0       4157   mdr32f9qx_timer.o
@@ -1098,7 +1098,7 @@ Image component sizes
        150         10          0          0          0      28164   timer.o
 
     ----------------------------------------------------------------------
-      5462        636       5914         12       1824     157316   Object Totals
+      5474        638       5914         12       1856     157536   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          8          0          2          2          0          0   (incl. Padding)
 
@@ -1147,15 +1147,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5742        652       5914         12       1924     155036   Grand Totals
-      5742        652       5914         12       1924     155036   ELF Image Totals
-      5742        652       5914         12          0          0   ROM Totals
+      5754        654       5914         12       1956     155256   Grand Totals
+      5754        654       5914         12       1956     155256   ELF Image Totals
+      5754        654       5914         12          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                11656 (  11.38kB)
-    Total RW  Size (RW Data + ZI Data)              1936 (   1.89kB)
-    Total ROM Size (Code + RO Data + RW Data)      11668 (  11.39kB)
+    Total RO  Size (Code + RO Data)                11668 (  11.39kB)
+    Total RW  Size (RW Data + ZI Data)              1968 (   1.92kB)
+    Total ROM Size (Code + RO Data + RW Data)      11680 (  11.41kB)
 
 ==============================================================================
 

@@ -8,8 +8,8 @@
 // Globals
 int16_t	imaginaryNumbers[64];
 int16_t	realNumbers[64];
-uint8_t		column[32] = {0};
 uint32_t	ADC_sum = 0;
+int16_t column[32] = {0};
 
 uint16_t fillColor = 0;
 
@@ -80,6 +80,12 @@ int main(void)
 			
 
 // ============== FFT ===================
+
+// обёртка БПФ
+// получение выборок(значение АЦП, разрядность БПФ)
+// выполнение БПФ
+// вычисление модуля (абсолютное): корень из суммы квадратов
+// отображение гистограммы
 
 	while(1)
 	{
@@ -229,6 +235,7 @@ int main(void)
 			*/
 			
 	    // Отрисовка гистограммы выходных данных БПФ
+			//drawHistogram();
 			if(column[i] < realNumbers[i])
 				LCD_drawFilledRectangle(0, i*10, realNumbers[i], i*10+9, 0);
 			if(column[i] > realNumbers[i])
