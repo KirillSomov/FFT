@@ -1,7 +1,7 @@
 Dependencies for Project 'FFT', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
 F (.\lib\App\link.h)(0x61A48876)()
-F (.\lib\App\main.c)(0x61A60D9C)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\lib\App\main.c)(0x61A88D3B)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (lib\App\link.h)(0x61A48876)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC7BC46)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
@@ -20,7 +20,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
 I (.\lib\App\link.h)(0x61A48876)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -48,7 +48,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -77,7 +77,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -106,7 +106,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -135,7 +135,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -164,7 +164,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -174,7 +174,7 @@ I (.\lib\HW\LCD_ILI9341.h)(0x61A48876)
 I (.\lib\Func\GUI.h)(0x61A48876)
 I (.\lib\Func\FFT.h)(0x61A60D9C)
 F (.\lib\HW\CPU.h)(0x5F0C10D5)()
-F (.\lib\HW\LCD_ILI9341.c)(0x61A4BEA0)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\lcd_ili9341.o --omf_browse .\objects\lcd_ili9341.crf --depend .\objects\lcd_ili9341.d)
+F (.\lib\HW\LCD_ILI9341.c)(0x61A888BA)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\lcd_ili9341.o --omf_browse .\objects\lcd_ili9341.crf --depend .\objects\lcd_ili9341.d)
 I (lib\HW\LCD_ILI9341.h)(0x61A48876)
 I (.\lib\App\link.h)(0x61A48876)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC7BC46)
@@ -193,7 +193,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -222,7 +222,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -251,7 +251,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -280,7 +280,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -290,8 +290,8 @@ I (.\lib\HW\LCD_ILI9341.h)(0x61A48876)
 I (.\lib\Func\GUI.h)(0x61A48876)
 I (.\lib\Func\FFT.h)(0x61A60D9C)
 F (.\lib\HW\Port_Setup.h)(0x61A4BBDC)()
-F (.\lib\HW\Timer.c)(0x61A4BE47)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
-I (lib\HW\Timer.h)(0x61A4BE47)
+F (.\lib\HW\Timer.c)(0x61A8874B)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\App\link.h)(0x61A48876)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC7BC46)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
@@ -309,7 +309,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)
@@ -318,7 +318,7 @@ I (.\lib\Func\Picture.h)(0x61A48876)
 I (.\lib\HW\LCD_ILI9341.h)(0x61A48876)
 I (.\lib\Func\GUI.h)(0x61A48876)
 I (.\lib\Func\FFT.h)(0x61A60D9C)
-F (.\lib\HW\Timer.h)(0x61A4BE47)()
+F (.\lib\HW\Timer.h)(0x61A882B9)()
 F (.\lib\HW\ADC.c)(0x61A4BBDB)(--c99 --gnu -c --cpu Cortex-M3 -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Users\somov\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\CoreSupport-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="531" -D_RTE_ -DUSE_MDR32F9Q2_Rev1 -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
 I (lib\HW\ADC.h)(0x61A4BBDB)
 I (.\lib\App\link.h)(0x61A48876)
@@ -338,7 +338,7 @@ I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5C540C84)
 I (C:\Users\somov\AppData\Local\Arm\Packs\Keil\MDR1986BExx\1.5.3\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x5F0C10D5)
-I (.\lib\HW\Timer.h)(0x61A4BE47)
+I (.\lib\HW\Timer.h)(0x61A882B9)
 I (.\lib\HW\Port_Cfg.h)(0x5F607A33)
 I (.\lib\HW\Port_Setup.h)(0x61A4BBDC)
 I (.\lib\HW\SPI.h)(0x61A48876)

@@ -30,7 +30,7 @@ void LCD_init(void)
   // сброс дисплея
   LCD_RST_SET;
   LCD_sendCommand(ILI9341_RESET);
-  delay_us(MDR_TIMER2, 10000);
+  delay_ms(MDR_TIMER2, 100);
    
   /// настройка дисплея
   LCD_sendCommand(ILI9341_POWERA);
@@ -125,7 +125,7 @@ void LCD_init(void)
   LCD_sendData(0x0F);
   LCD_sendCommand(ILI9341_SLEEP_OUT);
    
-  delay_us(MDR_TIMER2, 10000);
+  delay_ms(MDR_TIMER2, 100);
   LCD_sendCommand(ILI9341_DISPLAY_ON);
   LCD_sendCommand(ILI9341_GRAM);
 	

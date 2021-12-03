@@ -71,12 +71,11 @@ int main(void)
 	// инициализация LCD
 	LCD_init();
 	
-	
 	// белый фон LCD
 	LCD_fill(0xFFFF);
 	
 	// отрисовка шкал
-	interface_init();
+	//interface_init();
 			
 
 // ============== FFT ===================
@@ -237,14 +236,14 @@ int main(void)
 	    // Отрисовка гистограммы выходных данных БПФ
 			//drawHistogram();
 			if(column[i] < realNumbers[i])
-				LCD_drawFilledRectangle(0, i*10, realNumbers[i], i*10+9, 0);
+				LCD_drawFilledRectangle(0, realNumbers[i], i*10, i*10+9, 0);
 			if(column[i] > realNumbers[i])
-				LCD_drawFilledRectangle(realNumbers[i], i*10, column[i], i*10+9, 0xFFFF);
+				LCD_drawFilledRectangle(realNumbers[i], column[i], i*10, i*10+9, 0xFFFF);
 			
 			column[i] = realNumbers[i];
 
 		}		
-		//delay_ms(16);
+		delay_ms(MDR_TIMER2, 10);
 		
 	}
 	
