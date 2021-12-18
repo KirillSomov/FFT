@@ -62,6 +62,7 @@ int main(void)
 	// тактирование
 	clockSetup();
 	
+	Timer1_init();
 	Timer2_init();
 
 	//
@@ -72,6 +73,7 @@ int main(void)
 	
 	// инициализация SPI2
 	SPI2_Init();
+	I2C_init();
 	
 	// инициализация LCD
 	LCD_init();
@@ -79,8 +81,14 @@ int main(void)
 	// белый фон LCD
 	LCD_fill(0xFFFF);
 	
+	FT6236_init();
+	
 	// отрисовка шкал
 	//interface_init();
+	
+	GUI_FFT_numInputInterfaceInit();
+	
+	while(1);
 	
 	freqBlock = calcFreqBlock(4800);
 

@@ -14,5 +14,9 @@
 	void delay_ms(MDR_TIMER_TypeDef *TIMER,
 									uint16_t ms);							// Функия задержки в мс
 
-
+	
+	void Timer1_init(void);
+	void Timer1_IRQHandler(void);
+	
+	
 #endif

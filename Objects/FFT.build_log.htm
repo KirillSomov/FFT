@@ -22,12 +22,13 @@ Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
 C:\Users\Kirill\Documents\Projects\Keil\1986BE92QI\FFT\FFT.uvprojx
-Project File Date:  12/07/2021
+Project File Date:  12/18/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 compiling main.c...
+compiling GUI_FFT.c...
 compiling FFT.c...
 compiling Font.c...
 compiling GUI.c...
@@ -46,7 +47,7 @@ compiling MDR32F9Qx_port.c...
 compiling MDR32F9Qx_rst_clk.c...
 compiling MDR32F9Qx_timer.c...
 linking...
-Program Size: Code=4730 RO-data=1762 RW-data=12 ZI-data=2468  
+Program Size: Code=5916 RO-data=4376 RW-data=4 ZI-data=2700  
 FromELF: creating hex file...
 ".\Objects\FFT.axf" - 0 Error(s), 0 Warning(s).
 
@@ -83,18 +84,18 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup:1.5
       Include file:  Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c
-      Include file:  Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h
-      Include file:  Config\MDR32F9Qx_config.h
       Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s
+      Include file:  Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c
+      Include file:  Config\MDR32F9Qx_config.h
 
    * Component: Keil::Drivers:BKP:1.5
       Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_bkp.c
       Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_bkp.h
 
    * Component: Keil::Drivers:PORT:1.5
-      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_port.c
       Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_port.c
 
    * Component: Keil::Drivers:RST_CLK:1.5
       Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h
@@ -103,7 +104,7 @@ Package Vendor: Keil
    * Component: Keil::Drivers:TIMER:1.5
       Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h
       Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_timer.c
-Build Time Elapsed:  00:00:09
+Build Time Elapsed:  00:00:10
 </pre>
 </body>
 </html>

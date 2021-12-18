@@ -1,5 +1,6 @@
 --cpu Cortex-M3
 ".\objects\main.o"
+".\objects\gui_fft.o"
 ".\objects\fft.o"
 ".\objects\font.o"
 ".\objects\gui.o"

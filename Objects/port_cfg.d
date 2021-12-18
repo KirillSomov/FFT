@@ -28,4 +28,5 @@
 .\objects\port_cfg.o: .\lib\Func\Picture.h
 .\objects\port_cfg.o: .\lib\HW\LCD_ILI9341.h
 .\objects\port_cfg.o: .\lib\Func\GUI.h
+.\objects\port_cfg.o: .\lib\App\GUI_FFT.h
 .\objects\port_cfg.o: .\lib\Func\FFT.h

@@ -20,11 +20,13 @@
 	#include "Port_Setup.h"
 	#include "ADC.h"
 	#include "SPI.h"
+	#include "I2C.h"
 	#include "Font.h"
 	#include "Picture.h"
 	#include "LCD_ILI9341.h"
-	//#include "Touch_FT6236.h"
+	#include "Touch_FT6236.h"
 	#include "GUI.h"
+	#include "GUI_FFT.h"
 	#include "FFT.h"
 
 

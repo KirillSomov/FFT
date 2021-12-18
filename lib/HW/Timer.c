@@ -66,3 +66,41 @@ void delay_ms(MDR_TIMER_TypeDef *TIMER, uint16_t ms)
 	
 	while(((uint16_t)((uint16_t)TIMER->CNT - startCount)) < ms) {;}
 }
+
+
+void Timer1_init(void)
+{
+	// настройка Т2 на генерирование прерывания каждую мкс
+	MDR_RST_CLK->TIM_CLOCK	|=	((1 << 0)			// делитель 2: F_Timer1 = 80 / 2 = 40 MHz
+															|(1 << 24));	// вкл. тактирование Таймера 1
+		
+	// режим счета – вверх,начальное значение – число из регистра CNT
+	MDR_TIMER1->CNTRL	=	1;
+	MDR_TIMER1->PSG		=	39999;				// предделитель частоты
+	MDR_TIMER1->ARR		=	1;						// основание счета
+	MDR_TIMER1->CNT		=	0;						// начальное значение счетчика
+	MDR_TIMER1->IE		=	2;						// разрешение генерир. прерывание при CNT=ARR
+	
+	NVIC_EnableIRQ(Timer1_IRQn);
+	__enable_irq();
+}
+
+
+void Timer1_IRQHandler(void)
+{
+	for(uint8_t objButNum = 0; objButNum < OBJ_BUTTON_AMOUNT; objButNum++)
+	{
+		if(GUI.objList.ObjButtonList[objButNum].timerVal > 0)
+		{
+			GUI.objList.ObjButtonList[objButNum].timerVal--;
+		}
+		else
+		{
+			GUI.objList.ObjButtonList[objButNum].flag_buttonWasClicked = 0;
+		}
+	}
+	
+	MDR_TIMER1->CNT	=	0;									// сброс счетчика таймера
+	MDR_TIMER1->STATUS	=	0;							// сброс статуса прерывания
+	NVIC_ClearPendingIRQ(Timer1_IRQn);		// сброс статуса прерывания
+}

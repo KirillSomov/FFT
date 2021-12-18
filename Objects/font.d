@@ -28,4 +28,5 @@
 .\objects\font.o: .\lib\Func\Picture.h
 .\objects\font.o: .\lib\HW\LCD_ILI9341.h
 .\objects\font.o: .\lib\Func\GUI.h
+.\objects\font.o: .\lib\App\GUI_FFT.h
 .\objects\font.o: .\lib\Func\FFT.h

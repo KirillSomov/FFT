@@ -28,4 +28,5 @@
 .\objects\picture.o: .\lib\Func\Picture.h
 .\objects\picture.o: .\lib\HW\LCD_ILI9341.h
 .\objects\picture.o: .\lib\Func\GUI.h
+.\objects\picture.o: .\lib\App\GUI_FFT.h
 .\objects\picture.o: .\lib\Func\FFT.h

@@ -393,6 +393,16 @@
               <FileType>1</FileType>
               <FilePath>.\lib\App\main.c</FilePath>
             </File>
+            <File>
+              <FileName>GUI_FFT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\App\GUI_FFT.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_FFT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\App\GUI_FFT.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -512,6 +522,26 @@
               <FileName>ADC.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\lib\HW\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>Touch_FT6236.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\Touch_FT6236.c</FilePath>
+            </File>
+            <File>
+              <FileName>Touch_FT6236.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\Touch_FT6236.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\HW\I2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lib\HW\I2C.h</FilePath>
             </File>
           </Files>
         </Group>
