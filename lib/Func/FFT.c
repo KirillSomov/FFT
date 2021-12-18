@@ -24,6 +24,7 @@
 
 #include "FFT.h"
 
+struct complexNum fftNums[FFT_DOTS];
 
 // fix_fft.c - Быстрое преобразование Фурье с фиксированной точкой
 
@@ -53,7 +54,7 @@
   fr[n],fi[n] - массивы мнимых и реальных значений, 
   оба как INPUT так и RESULT, где 0 <= n < 2*m
 */
-void fix_fft(int16_t fr[], int16_t fi[], uint8_t L)
+void fft(struct complexNum *fftNums, uint16_t L)
 {
 	uint16_t indexEven, indexOdd;				// индексы чётных и нечётных отсчётов
 	uint16_t butterflyNum;							// номер графа "бабочка"
@@ -90,9 +91,9 @@ void fix_fft(int16_t fr[], int16_t fi[], uint8_t L)
 		if(invesreIndex <= index)
 			continue;
 		
-		tr = fr[index];
-		fr[index] = fr[invesreIndex];
-		fr[invesreIndex] = tr;
+		tr = fftNums[index].ReNum;
+		fftNums[index].ReNum = fftNums[invesreIndex].ReNum;
+		fftNums[invesreIndex].ReNum = tr;
 	}
 	
 	DFT_HalfLength = 1;
@@ -138,36 +139,36 @@ void fix_fft(int16_t fr[], int16_t fi[], uint8_t L)
 				*/
 				
 				// tr = FIX_MPY(Wr,fr[j]) - FIX_MPY(Wi,fi[j]);
-				c = ((long int)Wr * (long int)fr[indexOdd]);
+				c = ((long int)Wr * (long int)fftNums[indexOdd].ReNum);
 				c = c >> 14;
 				b = c & 0x01;
 				tr = (c >> 1) + b;
 				
-				c = ((long int)Wi * (long int)fi[indexOdd]);
+				c = ((long int)Wi * (long int)fftNums[indexOdd].ImNum);
 				c = c >> 14;
 				b = c & 0x01;
 				tr = tr - ((c >> 1) + b);
 				
 				// ti = FIX_MPY(Wr,fi[j]) + FIX_MPY(Wi,fr[j]);
-				c = ((long int)Wr * (long int)fi[indexOdd]);
+				c = ((long int)Wr * (long int)fftNums[indexOdd].ImNum);
 				c = c >> 14;
 				b = c & 0x01;
 				ti = (c >> 1) + b;
 				
-				c = ((long int)Wi * (long int)fr[indexOdd]);
+				c = ((long int)Wi * (long int)fftNums[indexOdd].ReNum);
 				c = c >> 14;
 				b = c & 0x01;
 				ti = ti + ((c >> 1) + b);
 				
-				qr = fr[indexEven];
-				qi = fi[indexEven];
+				qr = fftNums[indexEven].ReNum;
+				qi = fftNums[indexEven].ImNum;
 				qr >>= 1;
 				qi >>= 1;
 
-				fr[indexEven] = qr + tr;
-				fi[indexEven] = qi + ti;
-				fr[indexOdd] = qr - tr;
-				fi[indexOdd] = qi - ti;
+				fftNums[indexEven].ReNum = qr + tr;
+				fftNums[indexEven].ImNum = qi + ti;
+				fftNums[indexOdd].ReNum = qr - tr;
+				fftNums[indexOdd].ImNum = qi - ti;
 			}
 		}
 		
@@ -205,6 +206,70 @@ int32_t sqrt(uint32_t num)
 	return root;
 }
 
+
+void calcModule(struct complexNum *fftNums, uint16_t L)
+{	
+	for(uint8_t i = 0; i < 1 << L; i++)
+	{
+		fftNums[i].ReNum = (fftNums[i].ReNum * fftNums[i].ReNum + fftNums[i].ImNum * fftNums[i].ImNum);
+						
+		/*
+			Теперь мы находим квадратный корень 
+			из realNumbers [i], используя очень быстрое 
+			(но зависящее от компилятора) целочисленное приближение:
+		*/
+		
+		if (fftNums[i].ReNum >= 0) // Проверяем, что у нас нет отрицательного числа
+		{
+			fftNums[i].ReNum = sqrt(fftNums[i].ReNum);
+		}
+		else
+		{
+			fftNums[i].ReNum = 0;
+		}
+	}
+}
+
+
+void getAdcSamples(struct complexNum *fftNums, uint16_t L, uint32_t (*getAdcRes)(void))
+{
+	uint16_t ADC_sum = 0;
+	
+	for(uint16_t i = 0; i < 1 << L; i++)
+	{
+		// Выполнение преобразования АЦП
+		/*
+			Получение 12-разрядного результата АЦП
+			и настройка виртуального заземления 1.6 В 
+			обратно на 0 В, чтобы входная волна 
+			была правильно отцентрирована от 0 (то есть от -512 до +512)
+		*/
+			
+		for(uint8_t j = 0; j < 2; j++)
+			ADC_sum += getAdcRes();
+		
+		// взятие выборок
+		fftNums[i].ReNum = ((int16_t)(ADC_sum >> 1) - VIRTUAL_GND_SHIFT) >> 2;
+		
+		// Установка мнимого число на ноль
+		fftNums[i].ImNum = 0;
+		ADC_sum = 0;
+		
+		/*
+			Эта задержка калибруется с помощью осциллографа 
+			в соответствии с выходным сигналом PA2, 
+			чтобы обеспечить правильность периодов выборки
+			с учетом накладных расходов
+			остальной части кода и времени выборки АЦП.
+		*/
+		
+		delay_us(MDR_TIMER2, 20);
+		
+		// Дополнительная задержка для получения 50 мкс за цикл
+	}
+}
+
+
 /*void drawHistogram(int16_t realNumbers[])
 {
 	static int16_t column[32] = {0};
@@ -217,3 +282,47 @@ int32_t sqrt(uint32_t num)
 	
 	column[i] = realNumbers[i];
 }*/
+
+
+uint16_t calcFreqBlock(uint16_t freq)
+{
+	uint16_t block = 10000/FFT_DOTS*2;
+	uint16_t blockNum = 0;
+	uint16_t i = 0;
+	
+	while(blockNum < freq)
+	{
+		blockNum += block;
+		i++;
+	}
+	
+	return i;
+}
+
+
+bool detectFreq(struct complexNum *fftNums, uint16_t L, uint16_t frecBlock)
+{
+	int32_t n = 1 << L-1;
+	int32_t mean = 0;
+	int32_t difSum = 0;
+	int32_t sigma = 0;
+	
+	for(uint8_t i = 0; i < n; i++)
+	{
+		mean += fftNums[i].ReNum;
+	}
+	
+	mean /= (1 << L);
+	
+	for(uint8_t i = 0; i < n; i++)
+	{
+		difSum += (fftNums[i].ReNum - mean)*(fftNums[i].ReNum - mean);
+	}
+	
+	sigma = sqrt(difSum/n);
+	
+	if(fftNums[frecBlock].ReNum >= 3*sigma)
+		return true;
+	else
+		return false;
+}

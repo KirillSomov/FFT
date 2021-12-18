@@ -33,6 +33,7 @@
 	#define FFT_DOTS		64
 	#define N_WAVE			1024    // полная длина волны Sinewave[]
 	#define LOG2_N_WAVE	10      // log2(N_WAVE)
+	#define		VIRTUAL_GND_SHIFT	2020
 	
 	
 	struct complexNum
@@ -148,10 +149,16 @@
 
 
 	// прототипы функций
-	void getAdcSamples(struct complexNum *fftNums, uint16_t fftDots, uint32_t (*getAdcRes)(void));
-	void fix_fft(int16_t fr[], int16_t fi[], uint8_t L);
+	void getAdcSamples(struct complexNum *fftNums, uint16_t L, uint32_t (*getAdcRes)(void));
+	void fft(struct complexNum *fftNums, uint16_t L);
 	int32_t sqrt(uint32_t num);
+	void calcModule(struct complexNum *fftNums, uint16_t L);
+	
 	void drawHistogram(int16_t realNumbers[]);
+	
+	uint16_t calcFreqBlock(uint16_t freq);
+	
+	bool detectFreq(struct complexNum *fftNums, uint16_t L, uint16_t frecBlock);
 
 
 #endif 

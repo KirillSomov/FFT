@@ -8,11 +8,16 @@
 // Globals
 int16_t	imaginaryNumbers[64];
 int16_t	realNumbers[64];
-uint32_t	ADC_sum = 0;
+//uint32_t	ADC_sum = 0;
 int16_t column[32] = {0};
 
 uint16_t fillColor = 0;
 
+uint16_t freqBlock = 0;
+
+bool isDetected = false;
+
+uint16_t blockColor = 0;
 
 // отрисовка шкал
 void interface_init(void)
@@ -76,7 +81,8 @@ int main(void)
 	
 	// отрисовка шкал
 	//interface_init();
-			
+	
+	freqBlock = calcFreqBlock(4800);
 
 // ============== FFT ===================
 
@@ -95,40 +101,8 @@ int main(void)
 			что наша частота дискретизации составляет 20 кГц, 
 			что дает нам предел Найквиста 10 кГц
 		*/
-
-		for (uint8_t i = 0; i < 64; i++)
-		{
-			// Выполнение преобразования АЦП
-			/*
-				Получение 12-разрядного результата АЦП
-				и настройка виртуального заземления 1.6 В 
-				обратно на 0 В, чтобы входная волна 
-				была правильно отцентрирована от 0 (то есть от -512 до +512)
-			*/
-				
-			for(uint8_t j = 0; j < 2; j++)
-				ADC_sum += ADC_read();
-			
-			// взятие выборок
-			realNumbers[i] = ((int16_t)(ADC_sum >> 1) - VIRTUAL_GND_SHIFT) >> 2;
-			
-			// Установка мнимого число на ноль
-			imaginaryNumbers[i] = 0;
-			ADC_sum = 0;
-			
-			/*
-				Эта задержка калибруется с помощью осциллографа 
-				в соответствии с выходным сигналом PA2, 
-				чтобы обеспечить правильность периодов выборки
-				с учетом накладных расходов
-				остальной части кода и времени выборки АЦП.
-			*/
-			
-			delay_us(MDR_TIMER2, 20);
-			
-			// Дополнительная задержка для получения 50 мкс за цикл
-		}
 		
+		getAdcSamples(fftNums, 6, &ADC_read);
 		
 		// Выполнение прямого преобразования Фурье
 
@@ -187,7 +161,7 @@ int main(void)
 		
 		// Примечание: «6» - это размер входных данных (2 в степени 6 = 64)
 		// 6 - это кол-во делений последовательности пополам
-		fix_fft(realNumbers, imaginaryNumbers, 6);
+		fft(fftNums, 6);
 		
 		// Взятие абсолютных значений (по модулю) результатов БПФ
 		
@@ -202,26 +176,12 @@ int main(void)
 			необходимо оптимизировать только квадратный корень.
 		*/
 		
+		calcModule(fftNums, 6);
+		
+		isDetected = detectFreq(fftNums, 6, freqBlock);
+		
     for(uint8_t i = 0; i < 32; i++)
-    {
-			realNumbers[i] = (realNumbers[i] * realNumbers[i] + imaginaryNumbers[i] * imaginaryNumbers[i]);
-            
-			/*
-				Теперь мы находим квадратный корень 
-				из realNumbers [i], используя очень быстрое 
-				(но зависящее от компилятора) целочисленное приближение:
-			*/
-			
-			if (realNumbers[i] >= 0) // Проверяем, что у нас нет отрицательного числа
-			{
-				realNumbers[i] = sqrt(realNumbers[i]);
-			}
-			else
-			{
-				realNumbers[i] = 0;
-			}
-			
-			
+    {	
 			/*
 			Теперь у нас есть 32 блока данных звуковой частоты, 
 			представленных в виде линейной интенсивности 
@@ -235,15 +195,21 @@ int main(void)
 			
 	    // Отрисовка гистограммы выходных данных БПФ
 			//drawHistogram();
-			if(column[i] < realNumbers[i])
-				LCD_drawFilledRectangle(0, realNumbers[i], i*10, i*10+9, 0);
-			if(column[i] > realNumbers[i])
-				LCD_drawFilledRectangle(realNumbers[i], column[i], i*10, i*10+9, 0xFFFF);
 			
-			column[i] = realNumbers[i];
+			if(isDetected == true && i == freqBlock)
+				blockColor = 0xAAFF;
+			else
+				blockColor = 0;
+			
+			if(column[i] < fftNums[i].ReNum)
+				LCD_drawFilledRectangle(0, fftNums[i].ReNum, i*10, i*10+9, blockColor);
+			if(column[i] > fftNums[i].ReNum)
+				LCD_drawFilledRectangle(fftNums[i].ReNum, column[i], i*10, i*10+9, 0xFFFF);
+			
+			column[i] = fftNums[i].ReNum;
 
 		}		
-		delay_ms(MDR_TIMER2, 10);
+		delay_ms(MDR_TIMER2, 50);
 		
 	}
 	

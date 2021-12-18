@@ -18,7 +18,7 @@
 	#include "Timer.h"
 	#include "Port_Cfg.h"
 	#include "Port_Setup.h"
-	//#include "ADC.h"
+	#include "ADC.h"
 	#include "SPI.h"
 	#include "Font.h"
 	#include "Picture.h"
