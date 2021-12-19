@@ -2,6 +2,8 @@
 .\objects\spi.o: lib\HW\SPI.h
 .\objects\spi.o: .\lib\App\link.h
 .\objects\spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\spi.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h
 .\objects\spi.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
 .\objects\spi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -24,9 +26,11 @@
 .\objects\spi.o: .\lib\HW\Port_Setup.h
 .\objects\spi.o: .\lib\HW\ADC.h
 .\objects\spi.o: .\lib\HW\SPI.h
+.\objects\spi.o: .\lib\HW\I2C.h
 .\objects\spi.o: .\lib\Func\Font.h
 .\objects\spi.o: .\lib\Func\Picture.h
 .\objects\spi.o: .\lib\HW\LCD_ILI9341.h
+.\objects\spi.o: .\lib\HW\Touch_FT6236.h
 .\objects\spi.o: .\lib\Func\GUI.h
 .\objects\spi.o: .\lib\App\GUI_FFT.h
 .\objects\spi.o: .\lib\Func\FFT.h

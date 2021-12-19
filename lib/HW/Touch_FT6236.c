@@ -27,13 +27,13 @@ void FT6236_ports_init(void)
 void FT6236_reset(void)
 {
 	FT6236_RSTN_PORT->RXTX	&=	~(1	<< FT6236_RSTN_PIN);	// сброс контроллера
-	delay_ms(5);
+	delay_ms(MDR_TIMER2, 5);
 	FT6236_RSTN_PORT->RXTX	|=	(1 << FT6236_RSTN_PIN);		// рабочий режим
-	delay_ms(350);
+	delay_ms(MDR_TIMER2, 350);
 	
 	// вывод контроллера из режима гибернации
 	FT6236_INT_PORT->RXTX	&=	~(1	<< FT6236_INT_PIN);
-	delay_ms(1);
+	delay_ms(MDR_TIMER2, 1);
 	FT6236_INT_PORT->RXTX	|=	(1 << FT6236_INT_PIN);
 	
 	// настройка порта INT на вход

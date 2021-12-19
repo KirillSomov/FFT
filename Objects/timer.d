@@ -2,6 +2,8 @@
 .\objects\timer.o: lib\HW\Timer.h
 .\objects\timer.o: .\lib\App\link.h
 .\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\timer.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h
 .\objects\timer.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
 .\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -24,9 +26,11 @@
 .\objects\timer.o: .\lib\HW\Port_Setup.h
 .\objects\timer.o: .\lib\HW\ADC.h
 .\objects\timer.o: .\lib\HW\SPI.h
+.\objects\timer.o: .\lib\HW\I2C.h
 .\objects\timer.o: .\lib\Func\Font.h
 .\objects\timer.o: .\lib\Func\Picture.h
 .\objects\timer.o: .\lib\HW\LCD_ILI9341.h
+.\objects\timer.o: .\lib\HW\Touch_FT6236.h
 .\objects\timer.o: .\lib\Func\GUI.h
 .\objects\timer.o: .\lib\App\GUI_FFT.h
 .\objects\timer.o: .\lib\Func\FFT.h

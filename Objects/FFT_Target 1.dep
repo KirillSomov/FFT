@@ -1,8 +1,10 @@
 Dependencies for Project 'FFT', Target 'Target 1': (DO NOT MODIFY !)
-F (.\lib\App\link.h)(0x61BDFFC3)()
-F (.\lib\App\main.c)(0x61BE05A7)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (lib\App\link.h)(0x61BDFFC3)
+F (.\lib\App\link.h)(0x61BF1607)()
+F (.\lib\App\main.c)(0x61BF5BB8)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -18,22 +20,26 @@ I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5B0673C8)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x619A44CB)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (.\lib\HW\Timer.h)(0x61BE02DD)
 I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
-F (.\lib\App\GUI_FFT.c)(0x61BE5809)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\gui_fft.o --omf_browse .\objects\gui_fft.crf --depend .\objects\gui_fft.d)
-I (lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (lib\App\link.h)(0x61BDFFC3)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
+F (.\lib\App\GUI_FFT.c)(0x61BF5BB8)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\gui_fft.o --omf_browse .\objects\gui_fft.crf --depend .\objects\gui_fft.d)
+I (lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -49,22 +55,26 @@ I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5B0673C8)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
 I (.\lib\HW\CPU.h)(0x619A44CB)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (.\lib\HW\Timer.h)(0x61BE02DD)
 I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
-F (.\lib\App\GUI_FFT.h)(0x61BE5E1C)()
-F (.\lib\Func\FFT.c)(0x61BBC3A9)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\fft.o --omf_browse .\objects\fft.crf --depend .\objects\fft.d)
-I (lib\Func\FFT.h)(0x61BBBD08)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
+F (.\lib\App\GUI_FFT.h)(0x61BF5BB8)()
+F (.\lib\Func\FFT.c)(0x61BF5BB8)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\fft.o --omf_browse .\objects\fft.crf --depend .\objects\fft.d)
+I (lib\Func\FFT.h)(0x61BF5BB8)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -85,17 +95,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
-F (.\lib\Func\FFT.h)(0x61BBBD08)()
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
+F (.\lib\Func\FFT.h)(0x61BF5BB8)()
 F (.\lib\Func\Font.c)(0x604E8648)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\font.o --omf_browse .\objects\font.crf --depend .\objects\font.d)
 I (lib\Func\Font.h)(0x604E8648)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -116,17 +130,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\Func\Font.h)(0x604E8648)()
-F (.\lib\Func\GUI.c)(0x619AB2A2)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\gui.o --omf_browse .\objects\gui.crf --depend .\objects\gui.d)
-I (lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\link.h)(0x61BDFFC3)
+F (.\lib\Func\GUI.c)(0x61BF4EBA)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\gui.o --omf_browse .\objects\gui.crf --depend .\objects\gui.d)
+I (lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -147,17 +165,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
-F (.\lib\Func\GUI.h)(0x604E8751)()
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
+F (.\lib\Func\GUI.h)(0x61BF5BB8)()
 F (.\lib\Func\Picture.c)(0x604E8604)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\picture.o --omf_browse .\objects\picture.crf --depend .\objects\picture.d)
 I (lib\Func\Picture.h)(0x604E8604)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -178,17 +200,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\Func\Picture.h)(0x604E8604)()
-F (.\lib\HW\CPU.c)(0x619A6E19)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\cpu.o --omf_browse .\objects\cpu.crf --depend .\objects\cpu.d)
+F (.\lib\HW\CPU.c)(0x61BF1FA2)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\cpu.o --omf_browse .\objects\cpu.crf --depend .\objects\cpu.d)
 I (lib\HW\CPU.h)(0x619A44CB)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -209,17 +235,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\CPU.h)(0x619A44CB)()
 F (.\lib\HW\LCD_ILI9341.c)(0x61AE6538)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\lcd_ili9341.o --omf_browse .\objects\lcd_ili9341.crf --depend .\objects\lcd_ili9341.d)
 I (lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -240,17 +270,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)()
 F (.\lib\HW\SPI.c)(0x619A753E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (lib\HW\SPI.h)(0x619AAE40)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -271,17 +305,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\SPI.h)(0x619AAE40)()
 F (.\lib\HW\Port_Cfg.c)(0x619A44CB)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\port_cfg.o --omf_browse .\objects\port_cfg.crf --depend .\objects\port_cfg.d)
 I (lib\HW\Port_Cfg.h)(0x619A44CB)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -302,17 +340,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\Port_Cfg.h)(0x619A44CB)()
 F (.\lib\HW\Port_Setup.c)(0x61AE654A)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\port_setup.o --omf_browse .\objects\port_setup.crf --depend .\objects\port_setup.d)
 I (lib\HW\Port_Setup.h)(0x61AE654A)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -333,17 +375,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\Port_Setup.h)(0x61AE654A)()
-F (.\lib\HW\Timer.c)(0x61BE02DD)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+F (.\lib\HW\Timer.c)(0x61BF4EBA)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
 I (lib\HW\Timer.h)(0x61BE02DD)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -364,17 +410,21 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\Timer.h)(0x61BE02DD)()
 F (.\lib\HW\ADC.c)(0x61AE654A)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
 I (lib\HW\ADC.h)(0x61AE654A)
-I (.\lib\App\link.h)(0x61BDFFC3)
+I (.\lib\App\link.h)(0x61BF1607)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
@@ -395,13 +445,85 @@ I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
 I (.\lib\HW\Port_Setup.h)(0x61AE654A)
 I (.\lib\HW\ADC.h)(0x61AE654A)
 I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
 I (.\lib\Func\Font.h)(0x604E8648)
 I (.\lib\Func\Picture.h)(0x604E8604)
 I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
-I (.\lib\Func\GUI.h)(0x604E8751)
-I (.\lib\App\GUI_FFT.h)(0x61BE5E1C)
-I (.\lib\Func\FFT.h)(0x61BBBD08)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
 F (.\lib\HW\ADC.h)(0x61AE654A)()
+F (.\lib\HW\Touch_FT6236.c)(0x61BF1653)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\touch_ft6236.o --omf_browse .\objects\touch_ft6236.crf --depend .\objects\touch_ft6236.d)
+I (lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\App\link.h)(0x61BF1607)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F1772)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E834D12)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F1772)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F1772)
+I (.\RTE\Device\MDR1986BE92\system_MDR32F9Qx.h)(0x5B0677F6)
+I (.\RTE\Device\MDR1986BE92\MDR32F9Qx_config.h)(0x619A44CB)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h)(0x5B06738E)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_lib.h)(0x5B067348)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_bkp.h)(0x5B067268)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5B0673C8)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
+I (.\lib\HW\CPU.h)(0x619A44CB)
+I (.\lib\HW\Timer.h)(0x61BE02DD)
+I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
+I (.\lib\HW\Port_Setup.h)(0x61AE654A)
+I (.\lib\HW\ADC.h)(0x61AE654A)
+I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
+I (.\lib\Func\Font.h)(0x604E8648)
+I (.\lib\Func\Picture.h)(0x604E8604)
+I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
+F (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)()
+F (.\lib\HW\I2C.c)(0x5F272185)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (lib\HW\I2C.h)(0x5F25EA43)
+I (.\lib\App\link.h)(0x61BF1607)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63CDDA)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F1772)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63CDCC)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F1772)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E834D12)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F1772)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F1772)
+I (.\RTE\Device\MDR1986BE92\system_MDR32F9Qx.h)(0x5B0677F6)
+I (.\RTE\Device\MDR1986BE92\MDR32F9Qx_config.h)(0x619A44CB)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h)(0x5B06738E)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_lib.h)(0x5B067348)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_bkp.h)(0x5B067268)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_timer.h)(0x5B0673C8)
+I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h)(0x5B067368)
+I (.\lib\HW\CPU.h)(0x619A44CB)
+I (.\lib\HW\Timer.h)(0x61BE02DD)
+I (.\lib\HW\Port_Cfg.h)(0x619A44CB)
+I (.\lib\HW\Port_Setup.h)(0x61AE654A)
+I (.\lib\HW\ADC.h)(0x61AE654A)
+I (.\lib\HW\SPI.h)(0x619AAE40)
+I (.\lib\HW\I2C.h)(0x5F25EA43)
+I (.\lib\Func\Font.h)(0x604E8648)
+I (.\lib\Func\Picture.h)(0x604E8604)
+I (.\lib\HW\LCD_ILI9341.h)(0x619C06B4)
+I (.\lib\HW\Touch_FT6236.h)(0x5FA82B60)
+I (.\lib\Func\GUI.h)(0x61BF5BB8)
+I (.\lib\App\GUI_FFT.h)(0x61BF5BB8)
+I (.\lib\Func\FFT.h)(0x61BF5BB8)
+F (.\lib\HW\I2C.h)(0x5F25EA43)()
 F (RTE\Device\MDR1986BE92\startup_MDR32F9Qx.s)(0x5B0677DA)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "USE_MDR32F9Q2_Rev1 SETA 1"--list .\listings\startup_mdr32f9qx.lst --xref -o .\objects\startup_mdr32f9qx.o --depend .\objects\startup_mdr32f9qx.d)
 F (RTE\Device\MDR1986BE92\system_MDR32F9Qx.c)(0x5B0677EA)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -W -O0 --apcs=interwork --split_sections -I .\lib\App -I .\lib\Func -I .\lib\HW-I.\RTE\Device\MDR1986BE92-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc-IC:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc-D__UVISION_VERSION="528" -D_RTE_ -DUSE_MDR32F9Q2_Rev1-o .\objects\system_mdr32f9qx.o --omf_browse .\objects\system_mdr32f9qx.crf --depend .\objects\system_mdr32f9qx.d)
 I (C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h)(0x5B0677C2)

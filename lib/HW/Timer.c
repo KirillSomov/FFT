@@ -70,13 +70,15 @@ void delay_ms(MDR_TIMER_TypeDef *TIMER, uint16_t ms)
 
 void Timer1_init(void)
 {
-	// настройка Т2 на генерирование прерывания каждую мкс
-	MDR_RST_CLK->TIM_CLOCK	|=	((1 << 0)			// делитель 2: F_Timer1 = 80 / 2 = 40 MHz
-															|(1 << 24));	// вкл. тактирование Таймера 1
-		
+	// деинициализация текущего таймера
+	TIMER_DeInit(MDR_TIMER1);
+	// Установка первого делителя тактовой частоты таймера
+	// Timer2_CLK = HCLK/8 = 10 МГц
+	TIMER_BRGInit(MDR_TIMER1, TIMER_HCLKdiv8);
+
 	// режим счета – вверх,начальное значение – число из регистра CNT
 	MDR_TIMER1->CNTRL	=	1;
-	MDR_TIMER1->PSG		=	39999;				// предделитель частоты
+	MDR_TIMER1->PSG		=	9999;				// предделитель частоты
 	MDR_TIMER1->ARR		=	1;						// основание счета
 	MDR_TIMER1->CNT		=	0;						// начальное значение счетчика
 	MDR_TIMER1->IE		=	2;						// разрешение генерир. прерывание при CNT=ARR

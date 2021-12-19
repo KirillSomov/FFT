@@ -2,6 +2,8 @@
 .\objects\lcd_ili9341.o: lib\HW\LCD_ILI9341.h
 .\objects\lcd_ili9341.o: .\lib\App\link.h
 .\objects\lcd_ili9341.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lcd_ili9341.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\lcd_ili9341.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\lcd_ili9341.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h
 .\objects\lcd_ili9341.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
 .\objects\lcd_ili9341.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -24,9 +26,11 @@
 .\objects\lcd_ili9341.o: .\lib\HW\Port_Setup.h
 .\objects\lcd_ili9341.o: .\lib\HW\ADC.h
 .\objects\lcd_ili9341.o: .\lib\HW\SPI.h
+.\objects\lcd_ili9341.o: .\lib\HW\I2C.h
 .\objects\lcd_ili9341.o: .\lib\Func\Font.h
 .\objects\lcd_ili9341.o: .\lib\Func\Picture.h
 .\objects\lcd_ili9341.o: .\lib\HW\LCD_ILI9341.h
+.\objects\lcd_ili9341.o: .\lib\HW\Touch_FT6236.h
 .\objects\lcd_ili9341.o: .\lib\Func\GUI.h
 .\objects\lcd_ili9341.o: .\lib\App\GUI_FFT.h
 .\objects\lcd_ili9341.o: .\lib\Func\FFT.h

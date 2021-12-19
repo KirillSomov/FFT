@@ -157,7 +157,7 @@ void	GUI_objectListReset(void)
 // получить координаты нажатия
 void	GUI_getTouchPoint(void)
 {
-	/*GUI.flag_touch = FT6236_checkInt();
+	GUI.flag_touch = FT6236_checkInt();
 	
 	//GUI.flag_touch = 1;
 	
@@ -167,7 +167,7 @@ void	GUI_getTouchPoint(void)
 		
 		GUI.touchPoint.X = FT6236_Tpoint.Xt;
 		GUI.touchPoint.Y = FT6236_Tpoint.Yt;
-	}*/
+	}
 }
 
 // установить действия для объектов
@@ -179,13 +179,16 @@ void	GUI_objSetHandlerFunc(void (*objActionFunc)(void))
 // обработчик объетов
 void	GUI_objHandler(void)
 {
-	GUI.objActionFunc();
+	if(GUI.objActionFunc != 0)
+	{
+		GUI.objActionFunc();
+	}
 }
 
 // обработчик нажатия на дисплей
 void	GUI_Handler(void)
 {	
-	//GUI_getTouchPoint();
+	GUI_getTouchPoint();
 	
 	GUI_objHandler();
 	
@@ -202,7 +205,10 @@ void	GUI_Handler(void)
 				{
 					if(GUI.objList.ObjButtonList[objButNum].flag_buttonWasClicked == 0)
 					{
-						GUI.objList.ObjButtonList[objButNum].action();
+						if(GUI.objList.ObjButtonList[objButNum].action != 0)
+						{
+							GUI.objList.ObjButtonList[objButNum].action();
+						}
 						
 						if(GUI.objList.ObjButtonList[objButNum].msDelay != 0)
 						{

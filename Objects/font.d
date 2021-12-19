@@ -2,6 +2,8 @@
 .\objects\font.o: lib\Func\Font.h
 .\objects\font.o: .\lib\App\link.h
 .\objects\font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\font.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc\MDR32Fx.h
 .\objects\font.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
 .\objects\font.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -24,9 +26,11 @@
 .\objects\font.o: .\lib\HW\Port_Setup.h
 .\objects\font.o: .\lib\HW\ADC.h
 .\objects\font.o: .\lib\HW\SPI.h
+.\objects\font.o: .\lib\HW\I2C.h
 .\objects\font.o: .\lib\Func\Font.h
 .\objects\font.o: .\lib\Func\Picture.h
 .\objects\font.o: .\lib\HW\LCD_ILI9341.h
+.\objects\font.o: .\lib\HW\Touch_FT6236.h
 .\objects\font.o: .\lib\Func\GUI.h
 .\objects\font.o: .\lib\App\GUI_FFT.h
 .\objects\font.o: .\lib\Func\FFT.h

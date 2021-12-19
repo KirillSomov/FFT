@@ -147,7 +147,8 @@
 	 -32727, -32736, -32744, -32751, -32757, -32761, -32764, -32766,
 	};
 
-
+	extern uint16_t freqBlock;
+	
 	// прототипы функций
 	void getAdcSamples(struct complexNum *fftNums, uint16_t L, uint32_t (*getAdcRes)(void));
 	void fft(struct complexNum *fftNums, uint16_t L);
@@ -159,6 +160,8 @@
 	uint16_t calcFreqBlock(uint16_t freq);
 	
 	bool detectFreq(struct complexNum *fftNums, uint16_t L, uint16_t frecBlock);
+	
+	void fft_page(uint16_t freqBlock);
 
 
 #endif 

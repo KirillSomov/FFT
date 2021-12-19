@@ -37,7 +37,7 @@
 	#define	BUTTON_ID0_1_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID0_1_STATE									0
 	#define	BUTTON_ID0_1_DELAY_SEC							100
-	#define	BUTTON_ID0_1_ACTION_PTR							0
+	#define	BUTTON_ID0_1_ACTION_PTR							GUI_FFT_numButtonClick_1
 	
 	#define	BUTTON_2_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -55,7 +55,7 @@
 	#define	BUTTON_ID1_2_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID1_2_STATE									0
 	#define	BUTTON_ID1_2_DELAY_SEC							100
-	#define	BUTTON_ID1_2_ACTION_PTR							0	
+	#define	BUTTON_ID1_2_ACTION_PTR							GUI_FFT_numButtonClick_2	
 
 	#define	BUTTON_3_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -73,7 +73,7 @@
 	#define	BUTTON_ID2_3_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID2_3_STATE									0
 	#define	BUTTON_ID2_3_DELAY_SEC							100
-	#define	BUTTON_ID2_3_ACTION_PTR							0
+	#define	BUTTON_ID2_3_ACTION_PTR							GUI_FFT_numButtonClick_3
 
 	#define	BUTTON_4_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -91,7 +91,7 @@
 	#define	BUTTON_ID3_4_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID3_4_STATE									0
 	#define	BUTTON_ID3_4_DELAY_SEC							100
-	#define	BUTTON_ID3_4_ACTION_PTR							0
+	#define	BUTTON_ID3_4_ACTION_PTR							GUI_FFT_numButtonClick_4
 	
 	#define	BUTTON_5_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -109,7 +109,7 @@
 	#define	BUTTON_ID4_5_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID4_5_STATE									0
 	#define	BUTTON_ID4_5_DELAY_SEC							100
-	#define	BUTTON_ID4_5_ACTION_PTR							0
+	#define	BUTTON_ID4_5_ACTION_PTR							GUI_FFT_numButtonClick_5
 	
 	#define	BUTTON_6_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -127,7 +127,7 @@
 	#define	BUTTON_ID5_6_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID5_6_STATE									0
 	#define	BUTTON_ID5_6_DELAY_SEC							100
-	#define	BUTTON_ID5_6_ACTION_PTR							0
+	#define	BUTTON_ID5_6_ACTION_PTR							GUI_FFT_numButtonClick_6
 	
 	#define	BUTTON_7_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -145,7 +145,7 @@
 	#define	BUTTON_ID6_7_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID6_7_STATE									0
 	#define	BUTTON_ID6_7_DELAY_SEC							100
-	#define	BUTTON_ID6_7_ACTION_PTR							0
+	#define	BUTTON_ID6_7_ACTION_PTR							GUI_FFT_numButtonClick_7
 	
 	#define	BUTTON_8_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -163,7 +163,7 @@
 	#define	BUTTON_ID7_8_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID7_8_STATE									0
 	#define	BUTTON_ID7_8_DELAY_SEC							100
-	#define	BUTTON_ID7_8_ACTION_PTR							0
+	#define	BUTTON_ID7_8_ACTION_PTR							GUI_FFT_numButtonClick_8
 	
 	#define	BUTTON_9_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -181,7 +181,7 @@
 	#define	BUTTON_ID8_9_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID8_9_STATE									0
 	#define	BUTTON_ID8_9_DELAY_SEC							100
-	#define	BUTTON_ID8_9_ACTION_PTR							0
+	#define	BUTTON_ID8_9_ACTION_PTR							GUI_FFT_numButtonClick_9
 	
 	#define	BUTTON_0_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -199,7 +199,7 @@
 	#define	BUTTON_ID9_0_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID9_0_STATE									0
 	#define	BUTTON_ID9_0_DELAY_SEC							100
-	#define	BUTTON_ID9_0_ACTION_PTR							0
+	#define	BUTTON_ID9_0_ACTION_PTR							GUI_FFT_numButtonClick_0
 	
 	#define	BUTTON_CLR_ID												0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -217,7 +217,7 @@
 	#define	BUTTON_ID10_CLR_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID10_CLR_STATE									0
 	#define	BUTTON_ID10_CLR_DELAY_SEC							100
-	#define	BUTTON_ID10_CLR_ACTION_PTR						0
+	#define	BUTTON_ID10_CLR_ACTION_PTR						GUI_FFT_clrButtonClick
 	
 	#define	BUTTON_ENTR_ID													0
 	//#define	BUTTON_TPLUS_CLICK_COLOR						0xFF20
@@ -235,11 +235,50 @@
 	#define	BUTTON_ID11_ENTR_TEXT_MARGIN_Y					10
 	#define	BUTTON_ID11_ENTR_STATE									0
 	#define	BUTTON_ID11_ENTR_DELAY_SEC							100
-	#define	BUTTON_ID11_ENTR_ACTION_PTR							0
+	#define	BUTTON_ID11_ENTR_ACTION_PTR							GUI_FFT_entrButtonClick
+	
+	#define	BUTTON_CHANGE_FREQ_ID										0
+	//#define	BUTTON_TPLUS_CLICK_COLOR							0xFF20
+	#define	BUTTON_ID12_CHANGE_FREQ_X0							220-1
+	#define	BUTTON_ID12_CHANGE_FREQ_X1							LCD_WIDTH-1
+	#define	BUTTON_ID12_CHANGE_FREQ_Y0							300-1
+	#define	BUTTON_ID12_CHANGE_FREQ_Y1							LCD_HEIGHT-1
+	#define	BUTTON_ID12_CHANGE_FREQ_BORDER					4
+	#define	BUTTON_ID12_CHANGE_FREQ_MAIN_COLOR			0x7569
+	#define	BUTTON_ID12_CHANGE_FREQ_BORDER_COLOR		0x0000
+	#define	BUTTON_ID12_CHANGE_FREQ_TEXT						"."
+	#define	BUTTON_ID12_CHANGE_FREQ_TEXT_COLOR			0x0000
+	#define	BUTTON_ID12_CHANGE_FREQ_TEXT_FONT				&impact_18ptFontInfo
+	#define	BUTTON_ID12_CHANGE_FREQ_TEXT_MARGIN_X		20
+	#define	BUTTON_ID12_CHANGE_FREQ_TEXT_MARGIN_Y		10
+	#define	BUTTON_ID12_CHANGE_FREQ_STATE						0
+	#define	BUTTON_ID12_CHANGE_FREQ_DELAY_SEC				100
+	#define	BUTTON_ID12_CHANGE_FREQ_ACTION_PTR			GUI_FFT_changeFreqButtonClick
+	
+	
+	extern char inputNumStr[5];
+	extern uint16_t inputNum;
 	
 
 	void GUI_FFT_numInputInterfaceInit(void);
-	void GUI_FFT_numInputHandler(void);
+	void GUI_FFT_numInputInterfaceAction(void);
+	void GUI_FFT_numButtonClick(char ch);
+	void GUI_FFT_numButtonClick_1(void);
+	void GUI_FFT_numButtonClick_2(void);
+	void GUI_FFT_numButtonClick_3(void);
+	void GUI_FFT_numButtonClick_4(void);
+	void GUI_FFT_numButtonClick_5(void);
+	void GUI_FFT_numButtonClick_6(void);
+	void GUI_FFT_numButtonClick_7(void);
+	void GUI_FFT_numButtonClick_8(void);
+	void GUI_FFT_numButtonClick_9(void);
+	void GUI_FFT_numButtonClick_0(void);
+	
+	void GUI_FFT_entrButtonClick(void);
+	
+	void GUI_FFT_clrButtonClick(void);
+	
+	void GUI_FFT_changeFreqButtonClick(void);
 	
 
 #endif

@@ -12,6 +12,8 @@
 ".\objects\port_setup.o"
 ".\objects\timer.o"
 ".\objects\adc.o"
+".\objects\touch_ft6236.o"
+".\objects\i2c.o"
 ".\objects\startup_mdr32f9qx.o"
 ".\objects\system_mdr32f9qx.o"
 ".\objects\mdr32f9qx_bkp.o"

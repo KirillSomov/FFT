@@ -2,10 +2,19 @@
 #include "GUI_FFT.h"
 
 
+char inputNumStr[5] = {0};
+uint16_t inputNum = 0;
+
+extern uint16_t appState;
+
 void GUI_FFT_numInputInterfaceInit(void)
 {
 	//
 	LCD_fill(0xBDD7);
+	
+	inputNumStr[0] = '\0';
+	
+	GUI_objSetHandlerFunc(&GUI_FFT_numInputInterfaceAction);
 	
 	GUI_createLabel(LABEL_ID0_INPUT_NUM_X0,	LABEL_ID0_INPUT_NUM_X1,
 									LABEL_ID0_INPUT_NUM_Y0,	LABEL_ID0_INPUT_NUM_Y1,
@@ -162,24 +171,113 @@ void GUI_FFT_numInputInterfaceInit(void)
 									BUTTON_ID10_CLR_STATE,
 									BUTTON_ID10_CLR_DELAY_SEC,
 									BUTTON_ID10_CLR_ACTION_PTR);
-	GUI_createButton(BUTTON_ID11_ENTR_X0,	BUTTON_ID11_ENTR_X1,
-									BUTTON_ID11_ENTR_Y0,		BUTTON_ID11_ENTR_Y1,
-									BUTTON_ID11_ENTR_BORDER,
-									BUTTON_ID11_ENTR_MAIN_COLOR,
-									BUTTON_ID11_ENTR_BORDER_COLOR,
-									BUTTON_ID11_ENTR_TEXT,
-									BUTTON_ID11_ENTR_TEXT_COLOR,
-									BUTTON_ID11_ENTR_TEXT_FONT,
-									BUTTON_ID11_ENTR_TEXT_MARGIN_X,
-									BUTTON_ID11_ENTR_TEXT_MARGIN_Y,
-									BUTTON_ID11_ENTR_STATE,
-									BUTTON_ID11_ENTR_DELAY_SEC,
-									BUTTON_ID11_ENTR_ACTION_PTR);
+	GUI_createButton(BUTTON_ID12_CHANGE_FREQ_X0,	BUTTON_ID12_CHANGE_FREQ_X1,
+									BUTTON_ID12_CHANGE_FREQ_Y0,		BUTTON_ID12_CHANGE_FREQ_Y1,
+									BUTTON_ID12_CHANGE_FREQ_BORDER,
+									BUTTON_ID12_CHANGE_FREQ_MAIN_COLOR,
+									BUTTON_ID12_CHANGE_FREQ_BORDER_COLOR,
+									BUTTON_ID12_CHANGE_FREQ_TEXT,
+									BUTTON_ID12_CHANGE_FREQ_TEXT_COLOR,
+									BUTTON_ID12_CHANGE_FREQ_TEXT_FONT,
+									BUTTON_ID12_CHANGE_FREQ_TEXT_MARGIN_X,
+									BUTTON_ID12_CHANGE_FREQ_TEXT_MARGIN_Y,
+									BUTTON_ID12_CHANGE_FREQ_STATE,
+									BUTTON_ID12_CHANGE_FREQ_DELAY_SEC,
+									BUTTON_ID12_CHANGE_FREQ_ACTION_PTR);
 }
 
 
-void GUI_FFT_numInputHandler(void)
+void GUI_FFT_numInputInterfaceAction(void)
 {
+	static char inputNumStrPrev[5] = {0};
 	
+	if(strcmp(inputNumStrPrev, inputNumStr) != 0)
+	{
+		GUI_labelChangeText(LABEL_INPUT_NUM_ID, inputNumStr, LABEL_ID0_INPUT_NUM_TEXT_COLOR, LABEL_ID0_INPUT_NUM_TEXT_FONT);
+		strcpy(inputNumStrPrev, inputNumStr);
+	}
+}
+
+
+void GUI_FFT_numButtonClick(char ch)
+{
+	char* pInputNumStr = &inputNumStr;
+	uint8_t strLen = 0;
+	
+	if((strLen = strlen(pInputNumStr)) < 4)
+	{		
+		pInputNumStr[strLen++] = ch;
+		pInputNumStr[strLen] = '\0';
+	}
+}
+
+
+void GUI_FFT_numButtonClick_1(void)
+{
+	GUI_FFT_numButtonClick('1');
+}
+
+void GUI_FFT_numButtonClick_2(void)
+{
+	GUI_FFT_numButtonClick('2');
+}
+
+void GUI_FFT_numButtonClick_3(void)
+{
+	GUI_FFT_numButtonClick('3');
+}
+
+void GUI_FFT_numButtonClick_4(void)
+{
+	GUI_FFT_numButtonClick('4');
+}
+
+void GUI_FFT_numButtonClick_5(void)
+{
+	GUI_FFT_numButtonClick('5');
+}
+
+void GUI_FFT_numButtonClick_6(void)
+{
+	GUI_FFT_numButtonClick('6');
+}
+
+void GUI_FFT_numButtonClick_7(void)
+{
+	GUI_FFT_numButtonClick('7');
+}
+
+void GUI_FFT_numButtonClick_8(void)
+{
+	GUI_FFT_numButtonClick('8');
+}
+
+void GUI_FFT_numButtonClick_9(void)
+{
+	GUI_FFT_numButtonClick('9');
+}
+
+void GUI_FFT_numButtonClick_0(void)
+{
+	GUI_FFT_numButtonClick('0');
+}
+
+void GUI_FFT_entrButtonClick(void)
+{
+	inputNum = (uint16_t)atoi(inputNumStr);
+	freqBlock = calcFreqBlock(inputNum);
+	appState = 1;
+}
+
+
+void GUI_FFT_clrButtonClick(void)
+{
+	inputNumStr[0] = '\0';
+}
+
+
+void GUI_FFT_changeFreqButtonClick(void)
+{
+	appState = 3;
 }
 

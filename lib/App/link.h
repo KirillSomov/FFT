@@ -4,6 +4,9 @@
 
 	// подключение стандартных библиотек
 	#include "stdbool.h"
+	#include "stdlib.h"
+	#include "string.h"
+	
 	#include "MDR32Fx.h"                    // Device header
 	#include "core_cm3.h"                   // Keil::Device:Startup
 	#include "MDR32F9Qx_config.h"           // Keil::Device:Startup
