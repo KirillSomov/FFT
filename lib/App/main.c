@@ -2,7 +2,6 @@
 // подключение заголовочного файла
 #include "link.h"
 
-uint16_t appState = 0;
 
 // отрисовка шкал
 void interface_init(void)
@@ -70,6 +69,9 @@ int main(void)
 	
 	// отрисовка шкал
 	//interface_init();
+	
+	inputNum = 0;
+	appState = 3;
 
 	while(1)
 	{
@@ -77,33 +79,51 @@ int main(void)
 		{
 			case 1:
 				LCD_fill(0xFFFF);
-				GUI_createButton(BUTTON_ID11_ENTR_X0,	BUTTON_ID11_ENTR_X1,
-									BUTTON_ID11_ENTR_Y0,		BUTTON_ID11_ENTR_Y1,
-									BUTTON_ID11_ENTR_BORDER,
-									BUTTON_ID11_ENTR_MAIN_COLOR,
-									BUTTON_ID11_ENTR_BORDER_COLOR,
-									BUTTON_ID11_ENTR_TEXT,
-									BUTTON_ID11_ENTR_TEXT_COLOR,
-									BUTTON_ID11_ENTR_TEXT_FONT,
-									BUTTON_ID11_ENTR_TEXT_MARGIN_X,
-									BUTTON_ID11_ENTR_TEXT_MARGIN_Y,
-									BUTTON_ID11_ENTR_STATE,
-									BUTTON_ID11_ENTR_DELAY_SEC,
-									BUTTON_ID11_ENTR_ACTION_PTR);
+				GUI_objectListReset();
+				GUI_objSetHandlerFunc(0);
+				GUI_createButton(BUTTON_ID12_CHANGE_FREQ_X0,	BUTTON_ID12_CHANGE_FREQ_X1,
+												BUTTON_ID12_CHANGE_FREQ_Y0,		BUTTON_ID12_CHANGE_FREQ_Y1,
+												BUTTON_ID12_CHANGE_FREQ_BORDER,
+												BUTTON_ID12_CHANGE_FREQ_MAIN_COLOR,
+												BUTTON_ID12_CHANGE_FREQ_BORDER_COLOR,
+												BUTTON_ID12_CHANGE_FREQ_TEXT,
+												BUTTON_ID12_CHANGE_FREQ_TEXT_COLOR,
+												BUTTON_ID12_CHANGE_FREQ_TEXT_FONT,
+												BUTTON_ID12_CHANGE_FREQ_TEXT_MARGIN_X,
+												BUTTON_ID12_CHANGE_FREQ_TEXT_MARGIN_Y,
+												BUTTON_ID12_CHANGE_FREQ_STATE,
+												BUTTON_ID12_CHANGE_FREQ_DELAY_SEC,
+												BUTTON_ID12_CHANGE_FREQ_ACTION_PTR);
+				GUI_createLabel(LABEL_ID1_FREQ_X0,	LABEL_ID1_FREQ_X1,
+												LABEL_ID1_FREQ_Y0,	LABEL_ID1_FREQ_Y1,
+												LABEL_ID1_FREQ_BORDER,
+												LABEL_ID1_FREQ_MAIN_COLOR,
+												LABEL_ID1_FREQ_BORDER_COLOR,
+												LABEL_ID1_FREQ_TEXT,
+												LABEL_ID1_FREQ_TEXT_COLOR,
+												LABEL_ID1_FREQ_TEXT_FONT,
+												LABEL_ID1_FREQ_TEXT_MARGIN_X,
+												LABEL_ID1_FREQ_TEXT_MARGIN_Y,
+												LABEL_ID1_FREQ_ACTION_PTR);
+				GUI_labelChangeText(LABEL_FREQ_ID, inputNumStr, LABEL_ID1_FREQ_TEXT_COLOR, LABEL_ID1_FREQ_TEXT_FONT);
 				MDR_TIMER1->CNTRL	=	0;
 				NVIC_DisableIRQ(Timer1_IRQn);
 				__disable_irq();
 				appState = 2;
+				break;
 			case 2:
 				fft_page(freqBlock);
 				GUI_Handler();
+				break;
 			case 3:
-				GUI_FFT_numInputInterfaceInit();
 				Timer1_init();
+				GUI_FFT_numInputInterfaceInit();
 				appState = 4;
+				break;
 			case 4:
 				GUI_Handler();
 				delay_ms(MDR_TIMER2, 10);
+				break;
 		}
 	}
 }

@@ -37,8 +37,6 @@ uint16_t blockColor = 0;
 
 uint16_t freqBlock = 0;
 
-extern uint16_t appState;
-
 struct complexNum fftNums[FFT_DOTS];
 
 // обёртка БПФ
@@ -317,6 +315,9 @@ uint16_t calcFreqBlock(uint16_t freq)
 		i++;
 	}
 	
+	if(i > 0)
+		i--;
+	
 	return i;
 }
 
@@ -453,14 +454,17 @@ void fft_page(uint16_t freqBlock)
 		//drawHistogram();
 		
 		if(isDetected == true && i == freqBlock)
-			blockColor = 0xAAFF;
+			blockColor = 0xF800;
 		else
 			blockColor = 0;
 		
+		if(fftNums[i].ReNum > 185)
+			fftNums[i].ReNum = 185;
+		
 		if(column[i] < fftNums[i].ReNum)
-			LCD_drawFilledRectangle(0, fftNums[i].ReNum, i*10, i*10+9, blockColor);
+			LCD_drawFilledRectangle(0, fftNums[i].ReNum, LCD_HEIGHT-i*10-9-1, LCD_HEIGHT-i*10-1, blockColor);
 		if(column[i] > fftNums[i].ReNum)
-			LCD_drawFilledRectangle(fftNums[i].ReNum, column[i], i*10, i*10+9, 0xFFFF);
+			LCD_drawFilledRectangle(fftNums[i].ReNum, column[i], LCD_HEIGHT-i*10-9-1, LCD_HEIGHT-i*10-1, 0xFFFF);
 		
 		column[i] = fftNums[i].ReNum;
 

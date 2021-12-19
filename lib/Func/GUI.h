@@ -6,7 +6,7 @@
 	#include "link.h"
 
 
-	#define	OBJ_LABEL_AMOUNT		1
+	#define	OBJ_LABEL_AMOUNT		2
 	#define	OBJ_BUTTON_AMOUNT		13
 	#define	OBJ_CANVAS_AMOUNT		0
 
